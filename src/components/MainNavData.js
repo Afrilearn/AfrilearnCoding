@@ -2,38 +2,38 @@ const navdata = [
     {
         id: 1,
         title: "Home",
-        class: "navmenu"
+        url: "/"
     },
 
     {
         id: 2,
-        title: "Schools",
-        class: "navmenu"
+        title: "Apply",
+        url: "/apply"
     },
     {
         id: 3,
-        title: "Tuition",
-        class: "navmenu"
+        title: "Products",
+        url: "/student/products"
     },
     {
         id: 4,
         title: "FAQ",
-        class: "navmenu"
+        url: "/apply"
     },
     {
         id: 5,
         title: "Our Story",
-        class: "navmenu"
+        url: "/apply"
     },
     {
         id: 6,
         title: "Collaborate with us",
-        class: "navmenu"
+        url: "/apply"
     },
     {
         id: 7,
         title: "Careers",
-        class: "navmenu"
+        url: "/apply"
     },
 
 ]

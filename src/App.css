@@ -3,3 +3,34 @@
   margin: 0;
   padding: 0;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  width: 55%;
+  padding: 35px 20px;
+  margin-bottom: 20px;
+}
+
+.apply-main-wrapper {
+  text-align: center;
+  height: 75vh;
+  padding-top: 35px;
+}
+
+.apply-main-wrapper h1{
+  margin-bottom: 20px;
+}
+
+.enter-message-wrapper{
+  margin-bottom: 25px;
+}
+.message-wrapper {
+  margin: 0 auto;
+  text-align: center;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import navdata from './MainNavData';
+import { NavLink } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import './navbar.css';
 
@@ -11,7 +12,7 @@ const MainNavbar = () => {
         </div>
         {navdata && navdata.map((data) => 
         <ul>
-            <li>{data.title}</li>
+            <li ><NavLink to={data.url} key={data.id}>{data.title}</NavLink></li>
         </ul>
         )}
         <Button variant="contained">Apply Now</Button>

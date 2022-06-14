@@ -1,0 +1,6 @@
+.main-footer-wrapper {
+    background-color:black;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
