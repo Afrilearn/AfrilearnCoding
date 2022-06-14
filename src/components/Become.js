@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '@mui/material/Button';
+import { BsArrowRightShort } from 'react-icons/bs';
 import './become.css';
 
 const Become = () => {
@@ -25,7 +26,7 @@ const Become = () => {
             </div>
 
             <div className="space-wrapper">
-                <span>Affordable tuition payment plans <span>Learn more</span></span>
+                <span>Affordable tuition payment plans <span>Learn more</span></span><span><BsArrowRightShort size={15}/></span>
             </div>
         </div>
     </div>
