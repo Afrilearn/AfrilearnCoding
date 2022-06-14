@@ -1,0 +1,10 @@
+.mainnavbar {
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.logo {
+    margin-top: 10px;
+}
