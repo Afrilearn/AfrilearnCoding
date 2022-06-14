@@ -1,0 +1,17 @@
+.scrollwrapper {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(103, 114, 229);
+    padding: 10px;
+
+}
+
+.scrollwrapper h1 {
+    font-size: 0.875em;
+    font-family: EuclidRegular, sans-serif;
+    color: rgb(255, 255, 255);
+    animation: 3s linear 0s infinite normal none running flick;
+}

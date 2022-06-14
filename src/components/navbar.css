@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
 .mainnavbar {
-    background-color: red;
+    background: rgb(255, 246, 238);
     display: flex;
     justify-content: space-evenly;
-    padding: 30px;
+    padding: 45px;
+    font-size: 1em;
+    font-family: 'Merriweather', serif;
+    color: rgb(15, 15, 25);
+    line-height: 15px;
 }
 
-.logo {
-    margin-top: 10px;
+.mainnavbar ul li {
+    cursor: pointer;
+    list-style-type: none;
 }

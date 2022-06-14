@@ -1,0 +1,15 @@
+.learningwrapper {
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    padding: 35px;
+}
+
+.title-header h1 {
+    width: 35vw;
+    padding-bottom: 25px;
+    padding-left: 45px;
+}
+.para-learn-one {
+    margin-bottom: 35px;
+}
