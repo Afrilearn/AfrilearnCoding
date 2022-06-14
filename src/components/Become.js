@@ -8,7 +8,7 @@ const Become = () => {
     <div className='becomemainwrapper'>
         <div className='titlehead'>
             <h1 className="title-one">Become a Certified </h1>
-            <h1 className="title-two">Product Market</h1>
+            <h1 className="title-two">Software developer</h1>
         </div>
         <div className='detail-message'>
             <h4>
