@@ -41,7 +41,7 @@ const WhatYouLearn = () => {
                         <li><span><BsCheck /></span>HTML Identity and Classes</li>
                         <li><span><BsCheck /></span>HTML List and Tables</li>
                     </ul>
-                    <Button variant="contained" className='btn-styled'>Apply Now</Button>
+                    <Button variant="contained" className='btn-styled' href="https://myafrilearn.com/register">Apply Now</Button>
                 </div>
             </div>   
 

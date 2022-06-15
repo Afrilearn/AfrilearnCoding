@@ -22,7 +22,7 @@ const Become = () => {
             </h4>
               
             <div className="btn-wrapper">
-                <Button variant="contained">Apply Now</Button>
+                <Button variant="contained" href="https://myafrilearn.com/register">Apply Now</Button>
             </div>
 
             <div className="space-wrapper">

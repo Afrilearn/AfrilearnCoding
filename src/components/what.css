@@ -10,7 +10,8 @@
 .btn-styled {
     align-self: flex-start;
     position: absolute;
-    left: 80px;
+    right: 90px;
+    top: 10px;
 }
 
 

@@ -15,7 +15,7 @@ const MainNavbar = () => {
             <li ><NavLink to={data.url} key={data.id}>{data.title}</NavLink></li>
         </ul>
         )}
-        <Button variant="contained">Apply Now</Button>
+        <Button variant="contained" href="https://myafrilearn.com/register">Apply Now</Button>
     </div>
   )
 }
