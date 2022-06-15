@@ -6,11 +6,13 @@ const VideoSection = () => {
   return (
     <div className='video-setionmainwrapper'>
         <div className='title-wrapper'>
-            <h1>Want to start a great career in Product?</h1>
+            <h1>Introducing: Afrilearn KidsCode (Promotional Copies)</h1>
         </div>
         <div className='message-wrapper'>
             <p>
-            This video gives you a sneak peek into the three core fields of Product. Learn from leading experts on the fundamentals of what each role entails, and how to navigate each career path.
+            Afrilearn KidsCode is a live tutoring service that offers one-on-one coding lessons to kids aged
+            6-18 in HTML, CSS, Javascript and Python. We also teach concepts in machine learning,
+            artificial intelligence and so much more.
             </p>
         </div>
 

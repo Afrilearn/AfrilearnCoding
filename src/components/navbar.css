@@ -21,3 +21,8 @@
     list-style-type: none;
     
 }
+
+.btn-navbar {
+    border-radius: 20px;
+    background-color: brown;
+}

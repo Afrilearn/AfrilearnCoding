@@ -7,22 +7,22 @@ const Become = () => {
   return (
     <div className='becomemainwrapper'>
         <div className='titlehead'>
-            <h1 className="title-one">Become a Certified </h1>
-            <h1 className="title-two">Software developer</h1>
+            <h1 className="title-one">Your child  </h1>
+            <h1 className="title-two">can be the next!</h1>
         </div>
         <div className='detail-message'>
             <h4>
-                Learn high in-demand product skills from leading field experts
+            Zuckerberg. Elon Musk. Shola Akinlade. Iyin Aboyeji. You child can be next!
               </h4>
               <h4>
-                that will have you job-ready in 12 months. No degree
+              Empower your child with coding skills, in 3 months, 
                 </h4>
                 <h4>
-                or prior tech experience required.
+                to secure the future at Afrilearn KidsCode.
             </h4>
               
             <div className="btn-wrapper">
-                <Button variant="contained" href="https://myafrilearn.com/register">Apply Now</Button>
+                <Button variant="contained" href="https://myafrilearn.com/register">Sign up now</Button>
             </div>
 
             <div className="space-wrapper">
