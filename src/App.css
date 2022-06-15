@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "font1";
+  src: url("./assets/fonts/BakerSignet.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "font2";
+  src: url("./assets/fonts/BakerSignet.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "font3";
+  src: url("./assets/fonts/BakerSignet.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "font4";
+  src: url("./assets/fonts/BakerSignet.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,10 +49,12 @@ form input {
   text-align: center;
   height: 75vh;
   padding-top: 35px;
+  font-family: font4!important;
 }
 
 .apply-main-wrapper h1{
   margin-bottom: 20px;
+ 
 }
 
 .enter-message-wrapper{

@@ -10,7 +10,7 @@ const Products = () => {
   return (
     <div>
       <MainNavbar />
-      <ScrollMessage />
+      {/* <ScrollMessage /> */}
       <Become />
       <VideoSection />
       <LearningPath />

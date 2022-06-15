@@ -4,13 +4,15 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 70px;
+    font-family: font1!important;
 }
 
 .title-wrapper {
     margin-top: 4%;
+    margin-bottom: 20px
 }
 
 .message-wrapper {
     width: 50%;
-    margin-bottom: 7%;
+    margin-bottom: 3%;
 }
