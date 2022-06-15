@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+
 .learningwrapper {
     display: flex;
     justify-content: center;
-    background-color: aquamarine;
     padding: 35px;
+    background-color: beige;
+    padding-bottom: 55px;
+    padding-top: 55px;
+    margin-bottom: 20px;
 }
 
 .title-header h1 {
@@ -10,6 +16,8 @@
     padding-bottom: 25px;
     padding-left: 45px;
 }
-.para-learn-one {
+.para-learn-one, .para-learn-two {
     margin-bottom: 35px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
 }

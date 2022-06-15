@@ -4,6 +4,7 @@ import LearningPath from '../components/LearningPath'
 import MainNavbar from '../components/MainNavbar'
 import ScrollMessage from '../components/ScrollMessage'
 import VideoSection from '../components/VideoSection';
+import WhatYouLearn from '../components/WhatYouLearn'
 
 const Products = () => {
   return (
@@ -13,6 +14,7 @@ const Products = () => {
       <Become />
       <VideoSection />
       <LearningPath />
+      <WhatYouLearn />
     </div>
   )
 }

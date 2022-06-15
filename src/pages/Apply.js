@@ -13,8 +13,8 @@ const Apply = () => {
         
         <div className='message-wrapper'>
             <p>
-            Thank you for your interest in applying to AltSchool Africa. To continue your
-            application process, please note that you will be charged $20
+            Thank you for your interest in applying to AfriLearn. To continue your
+            application process, please note that you will be charged $-
             (Also check our tuition page to select an affordable payment plan)
             </p>
         </div>
