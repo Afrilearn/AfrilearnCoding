@@ -2,13 +2,17 @@ import React from 'react';
 import navdata from './MainNavData';
 import { NavLink } from 'react-router-dom';
 import Button from '@mui/material/Button';
+import  logo  from '../images/logo.png';
 import './navbar.css';
 
 const MainNavbar = () => {
   return (
     <div className="mainnavbar">
         <div className="logo">
-            Afrilearn
+        <NavLink to="/" ><img
+              src={logo}
+              width={75}
+            /></NavLink>
         </div>
         {navdata && navdata.map((data) => 
         <ul>

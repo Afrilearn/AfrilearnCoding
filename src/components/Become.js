@@ -26,7 +26,7 @@ const Become = () => {
             </div>
 
             <div className="space-wrapper">
-                <span>Affordable tuition payment plans <span>Learn more</span></span><span><BsArrowRightShort size={15}/></span>
+                <span>Affordable tuition payment plans </span><span><BsArrowRightShort size={15}/></span>
             </div>
         </div>
     </div>
