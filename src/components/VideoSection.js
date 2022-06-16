@@ -6,7 +6,7 @@ const VideoSection = () => {
   return (
     <div className='video-setionmainwrapper'>
         <div className='title-wrapper'>
-            <h1>Introducing: Afrilearn KidsCode (Promotional Copies)</h1>
+            <h1>Introducing: Afrilearn KidsCode</h1>
         </div>
         <div className='message-wrapper'>
             <p>

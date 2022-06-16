@@ -1,5 +1,6 @@
 import React from 'react'
 import Become from '../components/Become';
+import CourseContent from '../components/CourseContent';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import LearningPath from '../components/LearningPath';
@@ -15,6 +16,7 @@ const Home = () => {
             <Become />
             {/* <LearningPath /> */}
             <VideoSection />
+            <CourseContent />
             <FAQ />
             {/* <Footer /> */}
       </>

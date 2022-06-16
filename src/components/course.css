@@ -1,0 +1,81 @@
+.course-content-main-wrapper {
+    position: relative;
+    height: 80vh;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.box {
+    width: 43%;
+    height: 100%;            
+    position: absolute;
+    top: 0;
+    left: 45px;
+    background-color: #00d9b6;
+    border: solid 2px rgb(56, 53, 53);
+    
+
+}
+
+.box-two {
+    width: 43%;
+    height: 100%;            
+    position: absolute;
+    top: 0;
+    background-color: #00d9b6;
+    z-index: 9;
+    border: solid 2px rgb(56, 53, 53);
+
+}
+
+.stack-top{
+    background-color: #29465b;
+    z-index: 9;
+    margin: 20px;
+    color: #fff;
+}
+
+.stack-top-second {
+    background-color: #29465b;
+    margin: 20px;
+    color: #fff;
+}
+
+.stack-top-second ul, .stack-top ul{
+    padding: 20px;
+    margin-left: 30px;
+}
+
+.stack-top-second ul li, .stack-top ul li{
+ list-style-type: none;
+}
+
+.stack-top-second h1, .stack-top h1{
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.image-wrapper {
+    background-color: #00d9b6;
+    padding: 20px;
+}
+
+.btn-content {
+    background: #fff!important;
+    border-radius: 20px !important;
+    color: black!important;
+    text-align: center;
+    margin-bottom: 20px !important;
+    font-weight: bold;
+}
+
+.btn-wrapper-content {
+    border-radius:25px;
+    margin-bottom: 45px;
+    color: rgb(15, 15, 25);
+    font-size: 0.8em;
+    font-family: AlmarenaBold, sans-serif;
+    padding: 10px 20px;
+    margin-left: 35px;
+}

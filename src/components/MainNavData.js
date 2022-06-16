@@ -10,6 +10,17 @@ const navdata = [
         title: "Products",
         url: "/student/products"
     },
+    {
+        id: 3,
+        title: "FAQ",
+        url: "/faq"
+    },
+    {
+        id: 4,
+        title: "Process",
+        url: "/admission-process"
+    },
+  
     
 
 ]
