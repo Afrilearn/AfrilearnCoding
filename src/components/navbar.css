@@ -34,8 +34,12 @@
     color: #fff!important;
     text-align: center;
     margin-bottom: 20px !important;
+    bottom: 10px;
 }
 
+.logo a{
+    bottom: 10px;
+}
 .nav-link-group {
     display: flex;
     justify-content: flex-end;

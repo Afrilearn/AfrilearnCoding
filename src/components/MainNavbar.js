@@ -11,7 +11,7 @@ const MainNavbar = () => {
         <div className="logo">
         <NavLink to="/" ><img
               src={logo}
-              width={105}
+              width={110}
             /></NavLink>
         </div>
         {navdata && navdata.map((data) => 
