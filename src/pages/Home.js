@@ -3,6 +3,7 @@ import Become from '../components/Become';
 import CourseContent from '../components/CourseContent';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
+import ImageHolder from '../components/ImageHolder';
 import LearningPath from '../components/LearningPath';
 import MainNavbar from '../components/MainNavbar'
 import ScrollMessage from '../components/ScrollMessage';
@@ -13,6 +14,7 @@ const Home = () => {
       <>
             <MainNavbar />
             <ScrollMessage />
+            <ImageHolder />
             <Become />
             {/* <LearningPath /> */}
             <VideoSection />

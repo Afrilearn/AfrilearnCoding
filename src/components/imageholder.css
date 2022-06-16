@@ -1,0 +1,28 @@
+.main-image-wrapper {
+    /* background-color: brown; */
+    justify-content: center;
+    /* height: 50vh; */
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+}
+
+.first-image-holder img,
+.third-image-holder img,
+.fourth-image-holder img,
+.second-image-holder img{
+    width: 250px;
+    height: 200px;
+    margin: 20px;
+}
+
+.first-image-holder,
+.third-image-holder,
+.fourth-image-holder,
+.second-image-holder {
+    background-color: rgb(179, 156, 156);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    margin: 20px;
+}

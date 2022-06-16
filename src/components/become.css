@@ -29,6 +29,29 @@
     line-height: 70px;
 }
 
+.sroll-up-text {
+    color: #84bb29;
+    font-size: 3.1875em;
+    letter-spacing: -0.01em;
+    line-height: 70px;
+}
+
+.sroll-up-text li {
+    list-style-type: none;
+}
+
+.scrolling-words-box {
+    height: 3rem;
+    /* margin: auto; */
+    overflow: hidden;
+}
+    
+.scrolling-words-box ul {
+      margin: 0 0.625rem;
+      padding: 0;
+      animation: scrollUp 4s infinite;
+}
+
 .detail-message {
     display: flex;
     flex-direction: column;
