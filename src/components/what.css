@@ -1,6 +1,39 @@
-.what-main-wrapper {
+.why-content-main-wrapper{
+    position: relative;
+    height: 98vh;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.over-all-wrapper {
     text-align: center;
-    padding-bottom: 40px;
+}
+
+.over-all-title {
+    margin-bottom: 40px;
+    font-family: font3!important;
+    font-size: 1.53em;
+}
+
+.last-message {
+    margin-bottom: 40px;
+}
+.css-1ex1afd-MuiTableCell-root {
+    background-color: #29465b;
+    color: #fff !important;
+    font-family: font1!important;
+    font-size: 1em;
+}
+
+.css-15wwp11-MuiTableHead-root {
+    background-color: #29465b;
+}
+
+
+.css-1ygcj2i-MuiTableCell-root {
+    color: #fff !important;
+    font-size: 1.3em;
 }
 
 .what-main-title {
@@ -13,7 +46,6 @@
     right: 90px;
     top: 10px;
 }
-
 
 .inner-detail-sub-head{
     margin-bottom: 10px;
@@ -59,3 +91,4 @@ span {
     border: solid 2px black;
     text-align: start;
 }
+

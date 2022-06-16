@@ -1,51 +1,99 @@
 import React from 'react';
-import { BsCheck } from 'react-icons/bs';
 import Button from '@mui/material/Button';
+import { BsCheck } from 'react-icons/bs';
+import { DiHtml53DEffects } from 'react-icons/di';
+import { SiMicrosoftaccess } from 'react-icons/si';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
+import { courseDataCss, courseDataHtml } from '../components/courseData';
 import './what.css';
+import { NavLink } from 'react-router-dom';
 
 
 const WhatYouLearn = () => {
   return (
-    <div className='what-main-wrapper'>
-         <div className='what-main-title'>
+      <div className='over-all-wrapper'>
+        <div className="over-all-title">
             <h1>What will I learn?</h1>
-         </div>
-         <div className='table-wrapper'>
-            <div className='inner-title'>
-                <h1>Course Objectives</h1>
+        </div>
+    <div className='why-content-main-wrapper'>
+       
+      <div className='left-boxes'>
+        <div className='box'></div>
+        <div className='box stack-top'>
+        <div className='image-wrapper'>
+                <SiMicrosoftaccess size={50}/>
             </div>
-            <div className='inner-detail-sub-head'>
-                <p>This program is designed to provide you with in-depth knowledge on these:</p>
+        <TableContainer component={Paper}>
+            <Table  aria-label="custom pagination table">
+                <TableHead>
+                <TableRow>
+                    <TableCell>Course Outline </TableCell>
+                    <TableCell>Mode of teaching </TableCell>
+                </TableRow>
+                </TableHead>
+                <TableBody>
+                 {courseDataHtml.map((row) => (
+                <TableRow
+                key={row.id}
+                sx={{  border: 1  }}
+                >
+                <TableCell component="th" scope="row">
+                    {row.content}
+                </TableCell>
+                <TableCell>{row.mode}</TableCell>
+                
+                </TableRow>
+                  ))}
+                </TableBody>
+            </Table>
+            </TableContainer>
+        </div>
+      </div>
+      <div className='right-boxes'>
+        <div className='box-two'></div>
+        <div className='box-two stack-top-second'>
+            <div className='image-wrapper'>
+                <DiHtml53DEffects size={60}/>
             </div>
-            <div className='table-inner-detail'>
-                <div className='left-divider'>
-                    <ul>
-                        <li><span><BsCheck /></span>Computer Software and Hardware.</li>
-                        <li><span><BsCheck /></span>Introduction to HTML</li>
-                        <li><span><BsCheck /></span>HTML Headings and Paragraphs. </li>
-                        <li><span><BsCheck /></span>HTML Comments, Color, Styling and HTML attributes </li>
-                        <li><span><BsCheck /></span>HTML Links, HTML Link syntax, HTML Link Attributes.</li>
-                        <li><span><BsCheck /></span>HTML Images, Background Images, Images Map</li>
-                        <li><span><BsCheck /></span>HTML Identity and Classes</li>
-                        <li><span><BsCheck /></span>HTML List and Tables</li>
-                    </ul>
-                </div>
-                <div className='right-divider'>
-                <ul>
-                        <li><span><BsCheck /></span>Computer Software and Hardware.</li>
-                        <li><span><BsCheck /></span>Introduction to HTML</li>
-                        <li><span><BsCheck /></span>HTML Headings and Paragraphs. </li>
-                        <li><span><BsCheck /></span>HTML Comments, Color, Styling and HTML attributes </li>
-                        <li><span><BsCheck /></span>HTML Links, HTML Link syntax, HTML Link Attributes.</li>
-                        <li><span><BsCheck /></span>HTML Images, Background Images, Images Map</li>
-                        <li><span><BsCheck /></span>HTML Identity and Classes</li>
-                        <li><span><BsCheck /></span>HTML List and Tables</li>
-                    </ul>
-                    <Button variant="contained" className='btn-styled' href="https://myafrilearn.com/register">Apply Now</Button>
-                </div>
-            </div>   
+          
+            <TableContainer component={Paper}>
+            <Table  aria-label="custom pagination table">
+                <TableHead>
+                <TableRow>
+                    <TableCell>Course Outline </TableCell>
+                    <TableCell>Mode of teaching </TableCell>
+                </TableRow>
+                </TableHead>
+                <TableBody>
+                 {courseDataCss.map((row) => (
+                <TableRow
+                key={row.id}
+                sx={{  border: 1  }}
+                >
+                <TableCell component="th" scope="row">
+                    {row.content}
+                </TableCell>
+                <TableCell>{row.mode}</TableCell>
+                
+                </TableRow>
+                  ))}
+                </TableBody>
+            </Table>
+            </TableContainer>
+        </div>
+      </div>
 
-         </div>
+    </div>
+        <div className='last-message'>
+            <h1>Not sure what to do next?</h1>
+            <h3>We are here to help you. <a href="/">Speak with a learning advisor</a></h3>
+        </div>
     </div>
   )
 }
