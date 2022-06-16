@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import { BsCheck } from 'react-icons/bs';
 import { DiHtml53DEffects } from 'react-icons/di';
 import { SiMicrosoftaccess } from 'react-icons/si';
+import { courseDataCss, courseDataHtml } from '../components/courseData';
 import './course.css';
 
 const CourseContent = () => {
@@ -17,16 +18,11 @@ const CourseContent = () => {
             <div className='content-wrapper-title'>
                 <h1>Course Outline</h1>
             </div>
-        <ul>
-                        <li><span><BsCheck /></span>Introduction to CSS</li>
-                        <li><span><BsCheck /></span>CSS Syntax and comment</li>
-                        <li><span><BsCheck /></span>CSS Selectors </li>
-                        <li><span><BsCheck /></span>CSS  Navbar</li>
-                        <li><span><BsCheck /></span>CSS colours</li>
-                        <li><span><BsCheck /></span>CSS Backgrounds</li>
-                        <li><span><BsCheck /></span>Border Styling in CSS</li>
-                        <li><span><BsCheck /></span>Adding padding and margin spaces using CSS</li>
-                    </ul>
+                <ul>
+                    {courseDataCss && courseDataCss.map((cssData) => 
+                    <li><span><BsCheck /></span>{cssData.content}</li>
+                    )}
+                </ul>
                     <div className="btn-wrapper-content">
                 <Button variant="contained" href="https://myafrilearn.com/register" className="btn-content">Read more</Button>
             </div>
@@ -41,16 +37,11 @@ const CourseContent = () => {
             <div className='content-wrapper-title'>
                 <h1>Course Outline</h1>
             </div>
-        <ul>
-                        <li><span><BsCheck /></span>Computer Software and Hardware.</li>
-                        <li><span><BsCheck /></span>Introduction to HTML</li>
-                        <li><span><BsCheck /></span>HTML Headings and Paragraphs. </li>
-                        <li><span><BsCheck /></span>HTML Comments, Color, Styling and HTML attributes </li>
-                        <li><span><BsCheck /></span>HTML Links, HTML Link syntax, HTML Link Attributes.</li>
-                        <li><span><BsCheck /></span>HTML Images, Background Images, Images Map</li>
-                        <li><span><BsCheck /></span>HTML Identity and Classes</li>
-                        <li><span><BsCheck /></span>HTML List and Tables</li>
-                    </ul>
+                 <ul>
+                 {courseDataHtml && courseDataHtml.map((htmlData) => 
+                    <li><span><BsCheck /></span>{htmlData.content}</li>
+                    )}
+                 </ul>
                     <div className="btn-wrapper-content">
                 <Button variant="contained" href="https://myafrilearn.com/register" className="btn-content">Read more</Button>
             </div>
