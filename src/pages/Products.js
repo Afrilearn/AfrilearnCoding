@@ -1,5 +1,6 @@
 import React from 'react'
 import Become from '../components/Become'
+import HowAdmmision from '../components/HowAdmmision'
 import LearningPath from '../components/LearningPath'
 import MainNavbar from '../components/MainNavbar'
 import ScrollMessage from '../components/ScrollMessage'
@@ -15,6 +16,7 @@ const Products = () => {
       <VideoSection />
       <LearningPath />
       <WhatYouLearn />
+      <HowAdmmision />
     </div>
   )
 }
