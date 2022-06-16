@@ -6,6 +6,12 @@
     align-items: center;
     background: rgb(103, 114, 229);
     padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 85px;
 
 }
 
@@ -13,5 +19,33 @@
     font-size: 0.875em;
     font-family: EuclidRegular, sans-serif;
     color: rgb(255, 255, 255);
-    animation: 3s linear 0s infinite normal none running flick;
+    -moz-transform:translateX(50%);
+    -webkit-transform:translateX(50%);	
+    transform:translateX(50%);
+    /* Apply animation to this element */	
+    -moz-animation: bouncing-text 5s linear infinite alternate;
+    -webkit-animation: bouncing-text 5s linear infinite alternate;
+    animation: bouncing-text 5s linear infinite alternate;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes bouncing-text {
+    0%   { -moz-transform: translateX(50%); }
+    100% { -moz-transform: translateX(-50%); }
+   }
+   @-webkit-keyframes bouncing-text {
+    0%   { -webkit-transform: translateX(50%); }
+    100% { -webkit-transform: translateX(-50%); }
+   }
+   @keyframes bouncing-text {
+    0%   { 
+    -moz-transform: translateX(50%); /* Browser bug fix */
+    -webkit-transform: translateX(50%); /* Browser bug fix */
+    transform: translateX(50%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-50%); /* Browser bug fix */
+    -webkit-transform: translateX(-50%); /* Browser bug fix */
+    transform: translateX(-50%); 
+    }
+    
 }

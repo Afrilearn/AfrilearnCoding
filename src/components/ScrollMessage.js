@@ -5,7 +5,7 @@ import './scrollmessage.css';
 const ScrollMessage = () => {
   return (
     <div className="scrollwrapper">
-        <h1>scrollMessage</h1>
+        <h1 behavior="scroll" direction="left" >Afrilearn KidsCode is live!‍💻💃</h1>
     </div>
   )
 }

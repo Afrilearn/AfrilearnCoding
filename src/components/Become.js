@@ -12,7 +12,7 @@ const Become = () => {
         </div>
         <div className='detail-message'>
             <h4>
-            Zuckerberg. Elon Musk. Shola Akinlade. Iyin Aboyeji. You child can be next!
+            Zuckerberg. Elon Musk. Shola Akinlade. Iyin Aboyeji.
               </h4>
               <h4>
               Empower your child with coding skills, in 3 months, 

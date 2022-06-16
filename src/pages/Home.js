@@ -11,7 +11,7 @@ const Home = () => {
   return (
       <>
             <MainNavbar />
-            {/* <ScrollMessage /> */}
+            <ScrollMessage />
             <Become />
             {/* <LearningPath /> */}
             <VideoSection />
