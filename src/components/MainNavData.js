@@ -12,18 +12,18 @@ const navdata = [
         url: "/student/products",
         link:"#products"
     },
-    {
-        id: 3,
-        title: "FAQ",
-        url: "/faq",
-        link:"#faq"
-    },
-    {
-        id: 4,
-        title: "Process",
-        url: "/admission-process",
-        link:"#process"
-    },
+    // {
+    //     id: 3,
+    //     title: "FAQ",
+    //     url: "faq",
+    //     link:"#faq"
+    // },
+    // {
+    //     id: 4,
+    //     title: "Process",
+    //     url: "/admission-process",
+    //     link:"#process"
+    // },
   
     
 

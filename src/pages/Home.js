@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react';
 import Become from '../components/Become';
 import CourseContent from '../components/CourseContent';
 import FAQ from '../components/FAQ';
@@ -10,17 +10,25 @@ import ScrollMessage from '../components/ScrollMessage';
 import VideoSection from '../components/VideoSection';
 
 const Home = () => {
+  const faq = useRef(null);
+  
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: 'smooth'
+    })
+  }
   return (
       <>
-            <MainNavbar />
+            <MainNavbar  scrollToSection={scrollToSection} faq={faq} />
             <ScrollMessage />
             <ImageHolder />
             <Become />
-            {/* <LearningPath /> */}
             <VideoSection />
             <CourseContent />
-            <FAQ />
-            {/* <Footer /> */}
+            <div ref={faq}>
+              <FAQ />
+            </div>
       </>
     
   )
