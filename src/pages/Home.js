@@ -3,6 +3,7 @@ import Become from '../components/Become';
 import CourseContent from '../components/CourseContent';
 import WhatYouLearn from '../components/WhatYouLearn';
 import HowAdmmision from '../components/HowAdmmision';
+import SrollToTop from '../components/SrollToTop';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import ImageHolder from '../components/ImageHolder';
@@ -32,6 +33,7 @@ const Home = () => {
             process = {process}
             lPath = {lPath} />
             <ScrollMessage />
+            <SrollToTop />
             <ImageHolder />
             <Become />
             <VideoSection />
