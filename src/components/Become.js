@@ -7,18 +7,16 @@ const Become = () => {
   return (
     <div className='becomemainwrapper'>
         <div className='titlehead'>
-            <h1 className="title-one">Your child  </h1>
-            <h1 className="title-two">can be the next!</h1>
+            <h1 className="title-one">Empower your child to </h1>
+            <h1 className="title-two"> be the next!</h1>
         </div>
         <div className='detail-message'>
-            <h4>
-            Zuckerberg. Elon Musk. Shola Akinlade. Iyin Aboyeji.
-              </h4>
+           
               <h4>
-              Empower your child with coding skills, in 3 months, 
+              Transform your child's life with coding skills, in 3 months, 
                 </h4>
                 <h4>
-                to secure the future at Afrilearn KidsCode.
+                at Afrilearn KidsCode.
             </h4>
               
             <div className="btn-wrapper">
