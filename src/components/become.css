@@ -12,6 +12,33 @@
     align-items: center;
     padding-top: 5%;
     gap:10px;
+    font-weight: 600; 
+}
+
+.scrolling-words-box {
+  height: 3rem;
+  overflow: hidden;
+  color: #84bb29;
+  font-size: 3.1875em;
+  letter-spacing: -0.01em;
+  line-height: 70px;
+}
+.scrolling-words-box ul {
+  margin: 0 0.625rem;
+  padding: 0;
+  animation: scrollUp 4s infinite;
+}
+.scrolling-words-box ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 3rem;
+  list-style: none;
+}
+@keyframes scrollUp {
+  15%, 25% {
+    transform: translateY(-50%);
+  }
 }
 
 .title-one {
@@ -27,6 +54,8 @@
     font-size: 3.1875em;
     letter-spacing: -0.01em;
     line-height: 70px;
+ 
+    
 }
 
 .sroll-up-text {
@@ -42,7 +71,6 @@
 
 .scrolling-words-box {
     height: 3rem;
-    /* margin: auto; */
     overflow: hidden;
 }
     

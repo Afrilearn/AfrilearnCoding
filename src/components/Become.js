@@ -7,8 +7,15 @@ const Become = () => {
   return (
     <div className='becomemainwrapper'>
         <div className='titlehead'>
-            <h1 className="title-one">Empower your child to </h1>
-            <h1 className="title-two"> be the next!</h1>
+            <span className="title-one">Empower your child to </span>
+            {/* <h1 className="title-two"> be the next!</h1> */}
+            <div className='scrolling-words-box'>
+                <ul>
+                  <li>be the</li>
+                  <li>next!</li>
+                 
+                </ul>
+            </div>
         </div>
         <div className='detail-message'>
            
