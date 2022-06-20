@@ -11,12 +11,7 @@ const Products = () => {
   return (
     <div>
       <MainNavbar />
-      <ScrollMessage />
-      <Become />
-      <VideoSection />
       <LearningPath />
-      <WhatYouLearn />
-      <HowAdmmision />
     </div>
   )
 }

@@ -83,3 +83,76 @@ export const courseDataCss = [
         mode: "Animation, Storytelling"
     },
 ]
+
+export const courseDataJs = [
+    {
+        id: 1,
+        content: "Introduction to Javascript",
+        mode: "Animation, Storytelling"
+    },
+    {
+        id: 2,
+        content: "Javascript comments and syntax",
+        mode: "Animation, Storytelling"
+    },
+    {
+        id: 3,
+        content: "Javascript Variables",
+        mode: "Animation, Storytelling"
+    },
+    {
+        id: 4,
+        content: "Javascript operators",
+        mode: "Animation, Storytelling"
+    },
+    {
+        id: 5,
+        content: "Javascript data types",
+        mode: "Animation, Storytelling"
+    },
+    {
+        id: 6,
+        content: "Introductions to Functions in Javascript.",
+        mode: "Animation, Storytelling"
+    },
+    {
+        id: 7,
+        content: "Javascript Objects",
+        mode: "Animation, Storytelling"
+    },
+    {
+        id: 8,
+        content: "Javascript Strings",
+        mode: "Animation, Storytelling"
+    },
+    {
+        id: 9,
+        content: "Javascript Array and Array methods",
+        mode: "Animation, Storytelling"
+    },
+    {
+        id: 10,
+        content: "Loops in Javascript",
+        mode: "Animation, Storytelling"
+    },
+    {
+        id: 11,
+        content: "Javascript scope and hoisting",
+        mode: "Animation, Storytelling"
+    },
+    {
+        id: 12,
+        content: "Asynchronous functions",
+        mode: "Animation, Storytelling"
+    },
+    {
+        id: 13,
+        content: "Javascript HTML DOM methods",
+        mode: "Animation, Storytelling"
+    },
+    {
+        id: 14,
+        content: "Project",
+        mode: "Animation, Storytelling"
+    },
+]

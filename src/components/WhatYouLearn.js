@@ -18,10 +18,10 @@ import { NavLink } from 'react-router-dom';
 const WhatYouLearn = () => {
   return (
       <div className='over-all-wrapper'>
-        <div className="over-all-title">
+        {/* <div className="over-all-title">
             <h1>What will I learn?</h1>
-        </div>
-    <div className='why-content-main-wrapper'>
+        </div> */}
+    {/* <div className='why-content-main-wrapper'>
        
       <div className='left-boxes'>
         <div className='box'></div>
@@ -87,9 +87,9 @@ const WhatYouLearn = () => {
             </Table>
             </TableContainer>
         </div>
-      </div>
+      </div> */}
 
-    </div>
+    {/* </div> */}
         <div className='last-message'>
             <h1>Not sure what to do next?</h1>
             <h3>We are here to help you. <a href="/">Speak with a learning advisor</a></h3>

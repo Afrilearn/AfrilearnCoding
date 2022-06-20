@@ -1,9 +1,9 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 import { BsCheck } from 'react-icons/bs';
-import { DiHtml53DEffects } from 'react-icons/di';
-import { SiMicrosoftaccess } from 'react-icons/si';
-import { courseDataCss, courseDataHtml } from '../components/courseData';
+
+import { TbBrandCss3, TbBrandHtml5, TbBrandJavascript } from 'react-icons/tb';
+import { courseDataCss, courseDataHtml, courseDataJs } from '../components/courseData';
 import './course.css';
 
 const CourseContent = () => {
@@ -13,14 +13,14 @@ const CourseContent = () => {
         <div className='box'></div>
         <div className='box stack-top'>
         <div className='image-wrapper'>
-                <SiMicrosoftaccess size={60}/>
+                <TbBrandCss3 size={60}/>
             </div>
             <div className='content-wrapper-title'>
                 <h1>Course Outline</h1>
             </div>
                 <ul>
-                    {courseDataCss && courseDataCss.map((cssData) => 
-                    <li><span><BsCheck /></span>{cssData.content}</li>
+                {courseDataHtml && courseDataHtml.map((htmlData) => 
+                    <li><span><BsCheck /></span>{htmlData.content}</li>
                     )}
                 </ul>
                     <div className="btn-wrapper-content">
@@ -32,14 +32,34 @@ const CourseContent = () => {
         <div className='box-two'></div>
         <div className='box-two stack-top-second'>
             <div className='image-wrapper'>
-                <DiHtml53DEffects size={60}/>
+                <TbBrandHtml5 size={60}/>
             </div>
             <div className='content-wrapper-title'>
                 <h1>Course Outline</h1>
             </div>
                  <ul>
-                 {courseDataHtml && courseDataHtml.map((htmlData) => 
-                    <li><span><BsCheck /></span>{htmlData.content}</li>
+                 {courseDataCss && courseDataCss.map((cssData) => 
+                    <li><span><BsCheck /></span>{cssData.content}</li>
+                 
+                    )}
+                 </ul>
+                    <div className="btn-wrapper-content">
+                <Button variant="contained" href="student/products" className="btn-content">Read more</Button>
+            </div>
+        </div>
+      </div>
+      <div className='middle-boxes'>
+        <div className='box-three'></div>
+        <div className='box-three stack-top-second'>
+            <div className='image-wrapper'>
+                <TbBrandJavascript size={60}/>
+            </div>
+            <div className='content-wrapper-title'>
+                <h1>Course Outline</h1>
+            </div>
+                 <ul>
+                 {courseDataJs && courseDataJs.map((jsData) => 
+                    <li><span><BsCheck /></span>{jsData.content}</li>
                     )}
                  </ul>
                     <div className="btn-wrapper-content">
