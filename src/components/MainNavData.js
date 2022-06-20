@@ -8,16 +8,16 @@ const navdata = [
     },
     {
         id: 2,
-        title: "Products",
-        url: "/student/products",
+        title: "FAQ",
+        url: "faq",
         link:"#products"
     },
-    // {
-    //     id: 3,
-    //     title: "FAQ",
-    //     url: "faq",
-    //     link:"#faq"
-    // },
+    {
+        id: 3,
+        title: "Learning path",
+        url: "faq",
+        link:"#faq"
+    },
     // {
     //     id: 4,
     //     title: "Process",

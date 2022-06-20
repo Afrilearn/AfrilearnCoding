@@ -92,7 +92,7 @@ const WhatYouLearn = () => {
     {/* </div> */}
         <div className='last-message'>
             <h1>Not sure what to do next?</h1>
-            <h3>We are here to help you. <a href="/">Speak with a learning advisor</a></h3>
+            <h3>We are here to help you. <a href="https://myafrilearn.com/contact">Speak with a learning advisor</a></h3>
         </div>
     </div>
   )

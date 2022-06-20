@@ -13,6 +13,9 @@ import VideoSection from '../components/VideoSection';
 
 const Home = () => {
   const faq = useRef(null);
+  const courses = useRef(null);
+  const process = useRef(null);
+  const lPath = useRef(null);
   
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -22,15 +25,27 @@ const Home = () => {
   }
   return (
       <>
-            <MainNavbar  scrollToSection={scrollToSection} faq={faq} />
+            <MainNavbar 
+            scrollToSection={scrollToSection} 
+            faq={faq} 
+            courses ={courses}
+            process = {process}
+            lPath = {lPath} />
             <ScrollMessage />
             <ImageHolder />
             <Become />
             <VideoSection />
-            <CourseContent />
-            <WhatYouLearn />            
-            <LearningPath />
-            <HowAdmmision />
+            <div  ref={courses}>
+              <CourseContent />
+            </div>
+            
+            <WhatYouLearn /> 
+            <div  ref={lPath}>           
+              <LearningPath />
+            </div>
+            <div  ref={process}>
+               <HowAdmmision />
+            </div>
             <div ref={faq}>
               <FAQ />
             </div>
