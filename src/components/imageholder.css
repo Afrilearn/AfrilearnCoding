@@ -32,7 +32,7 @@
 
 @keyframes drift {
 	from {
-		transform: translateX(850px);
+		transform: translateX(20px);
 	}
 	to {
 		transform: translateX(-1200px);

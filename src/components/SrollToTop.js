@@ -1,29 +1,37 @@
 import React, { useState, useEffect } from 'react';
 import { FaAngleDoubleUp } from 'react-icons/fa';
 
+import './scroll.css';
+
 const SrollToTop = () => {
-    const [scrollToTheTop, setScrollToTheTop] = useState(false)
+    const [showScrollToTheTop, setShowScrollToTheTop] = useState(false)
 
     useEffect(() => {
-        if(window.screenY >300) {
-            setScrollToTheTop(true)
-        }else{
-            setScrollToTheTop(false)
-        }
+        window.addEventListener('scroll', () => {
+          if(window.screenY > 300) {
+            setShowScrollToTheTop(true)
+          }else{
+            setShowScrollToTheTop(false)
+          }
+        })
     }, [])
     
-    const scrollToUp = (elementRef) => {
+    const scrollToUp = () => {
         window.scrollTo({
           top: 0,
-          behavior: 'smooth'
+          behavior: 'smooth',
         })
       }
 
 
   return (
-    <div>
-       { scrollToTheTop && <FaAngleDoubleUp onClick={scrollToUp} /> }
-    </div>
+  
+      <FaAngleDoubleUp
+      onClick={scrollToUp} 
+      className="top-btn-possition to-top-btn" 
+      />
+       
+
   )
 }
 

@@ -33,7 +33,7 @@ const Home = () => {
             process = {process}
             lPath = {lPath} />
             <ScrollMessage />
-            <SrollToTop />
+            {/* <SrollToTop /> */}
             <ImageHolder />
             <Become />
             <VideoSection />
