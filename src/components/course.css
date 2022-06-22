@@ -1,64 +1,69 @@
 .course-content-main-wrapper {
-    position: relative;
+    /* position: relative; */
     height: 90vh;
-    display: grid;
-    grid-template-columns: repeat(3, 50px);
+    display: flex;
+
+    /* grid-template-columns: repeat(3, 50px); */
     justify-content: center;
     margin-bottom: 80px;
-    background-color: crimson;
+    gap: 10px;
 }
 
 .box {
-    width: 25%;
+    /* width: 25%; */
     height: 100%;            
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 95px;
+    left: 95px; */
+    /* position: relative; */
     background-color: #00d9b6;
     border: solid 2px rgb(56, 53, 53);
 }
 
 .box-two {
-    width: 25%;
+    /* width: 25%; */
     height: 100%;            
-    position: absolute;
-    top: 0;
+    /* position: absolute;
+    top: 0; */
     background-color: #00d9b6;
-    z-index: 9;
-    left: 500px;
+    /* z-index: 9; */
+    /* left: 500px; */
+    /* position: relative; */
     border: solid 2px rgb(56, 53, 53);
 
 }
 
 .box-three {
-    width: 25%;
+    /* width: 25%; */
     height: 100%;            
-    position: absolute;
+    /* position: absolute; */
     background-color: #00d9b6;
-    left: 900px;
-    z-index: 9;
+    /* left: 900px; */
+    /* z-index: 9; */
+    /* position: relative; */
     border: solid 2px rgb(56, 53, 53);
 }
 
 .stack-top{
     background-color: #29465b;
-    z-index: 9;
-    margin: 20px;
+    /* z-index: 9; */
+    /* margin: 20px; */
     color: #fff;
-    position: absolute;
+    /* position: relative; */
     
 }
 
 .stack-top-second {
     background-color: #29465b;
-    margin: 20px;
+    /* margin: 20px; */
     color: #fff;
+    /* position: relative; */
 }
 
 .stack-top-second ul, .stack-top ul{
     /* padding: 10px; */
     margin-top: 10px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     text-align: start;
 }
 
@@ -85,8 +90,6 @@
     font-weight: bold;
 }
 
-
-
 .btn-wrapper-content {
     border-radius:25px;
     margin-bottom: 45px;
@@ -105,12 +108,37 @@
 /* ===================================== */
 @media screen and (max-width: 960px) {
     .course-content-main-wrapper {
-        position: relative;
-        height: 90vh;
-        display: grid;
-        grid-template-columns: repeat(1, auto);
-        grid-template-rows: repeat(3, auto);
+        /* position: relative; */
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: repeat(3, 50px); */
         justify-content: center;
-        margin-bottom: 80px;
+        margin-bottom: 50%;
+        margin-top: 20%;
+        /* gap: 10%; */
+    }
+    .box-three {
+        height: 100%;
+        /* margin-top: 20%; */
+        margin: 20px;
+        /* display: none; */
+        padding: 20px;
+    }
+    
+    .box,.box-two {
+        /* margin-bottom: 20%; */
+        /* margin-top: 20%; */
+        padding: 20px;
+        height: 100%;
+        margin: 20px;
+        /* position:relative; */
+    }
+    .btn-wrapper-content {
+        
+        margin-left: 5px;
+        margin-top: 3px;
+        position: absolute;
+        bottom: 1px;
     }
 }

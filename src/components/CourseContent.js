@@ -10,7 +10,7 @@ const CourseContent = () => {
   return (
     <div className='course-content-main-wrapper'>
       <div className='left-boxes'>
-        <div className='box'></div>
+        {/* <div className='box'></div> */}
         <div className='box stack-top'>
         <div className='image-wrapper'>
                 <TbBrandCss3 size={60}/>
@@ -29,7 +29,7 @@ const CourseContent = () => {
         </div>
       </div>
       <div className='right-boxes'>
-        <div className='box-two'></div>
+        {/* <div className='box-two'></div> */}
         <div className='box-two stack-top-second'>
             <div className='image-wrapper'>
                 <TbBrandHtml5 size={60}/>
@@ -49,7 +49,7 @@ const CourseContent = () => {
         </div>
       </div>
       <div className='middle-boxes'>
-        <div className='box-three'></div>
+        {/* <div className='box-three'></div> */}
         <div className='box-three stack-top-second'>
             <div className='image-wrapper'>
                 <TbBrandJavascript size={60}/>
