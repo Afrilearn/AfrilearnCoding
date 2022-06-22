@@ -1,33 +1,58 @@
 const faqData = [
     {
         id: 1,
-        title: "AfrilearnCoding4Kids",
-        description: "Afrilearn integrates a network of seasoned tutors, animators, and developers to deliver world-class and affordable education to young Africans anywhere. As the skill of the future, we are invested in developing tech-based courses that prepare the African child for the future of work, helping them compete favourably with their counterparts around the world."
+        title: "How do I sign up for KidsCode ?",
+        description: "To register, please visit our website (www.myafrilearn.com/kidscode) and click on the SIGN UP NOW button. You will be required to put in a valid email address before you proceed to the application form."
     },
     {
         id: 2,
-        title: "Introducing the AfrilearnCoding4Kids",
-        description: "Afrilearn Coding4Kids is a self-paced coding class with well-researched, and developed videos covering the basics of coding - HTML, CSS and Javascript. This course is divided into these three modules and at the end of the course, students would have mastered the basics of these three programming languages and would be ready to take on a bigger task in the world of coding."
+        title: "After registration, what next ?",
+        description: "Upon successful registration, your payment will be confirmed within 24 hours. After confirmation, a home study kit with all the materials you need for the assessment will be sent to you. Please make sure you provide a valid email address while applying and check your spam for emails from us. Also, ensure to thoroughly study the materials provided in the home study kit."
     }, 
     {
         id: 3,
-        title: "AfrilearnCoding4Kids Module",
-        description: "Module One: HTML Kids, Module Two: CSS for Kids, Module, Three: Javascript for Kids"
+        title: "When do the classes begin ?",
+        description: "The KidsCode class will commence in August. The actual date will be communicated with all applicants."
     },
     {
         id: 4,
-        title: "Who Is This Course For",
-        description: "Students from ages 10 to 20 will be able to take this course and partake in our compulsory weekly Live class with a developer coach who will guide students on areas of weakness in the programme."
+        title: "How long will the course last for ?",
+        description: "The duration of the course is 3 months."
     },
     {
         id: 5,
-        title: "Learning Outcome",
-        description: "At the end of the three modules, students will be able to create a simple website using the languages covered."
+        title: "Will I get a Certification at the end of the training ?",
+        description: "Yes, you will. Upon completion of the 3 months training, participants will gain an official Certificate from Afrilearn. Note that you will be required to pay the sum of ₦1000 to access certification from Afrilearn."
     },
     {
         id: 6,
-        title: "Investment",
-        description: "Students are to pay N100,000 for the three months intensive programme. Students who are unable to afford this are welcome to apply for scholarship slots in each cohort, with limited slots available."
+        title: "Do I need to have prior knowledge of coding ?",
+        description: "No, you do not need prior knowledge about this course to apply. You will be taught from scratch."
+    },
+    {
+        id: 7,
+        title: "What qualifies me to get accepted into the program ?",
+        description: "To get accepted into the program, you need to be between above age 6 and be eager to learn and change the world."
+    },
+    {
+        id: 8,
+        title: "How much is the tuition fee ?",
+        description: "We have flexible payment plans just for you. You are required to choose your preferred payment plan, the tuition fee can be paid upfront, quarterly or monthly. Check out the tuition page to see all payment options."
+    },
+    {
+        id: 9,
+        title: "Is the certificate recognisable anywhere ?",
+        description: "Yes, it is. We are partnering with reputable higher institutions across the continent to increase credibility."
+    },
+    {
+        id: 10,
+        title: "Where will the classes take place ?",
+        description: "Most of the classes will be held online but we will also have community peer learning sessions from time to time."
+    },
+    {
+        id: 11,
+        title: "What will I learn in class for three months ?",
+        description: "You will learn the required skills to become a proficient with HTML, CSS, JavaScript etc"
     },
     
 ]

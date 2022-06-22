@@ -10,8 +10,7 @@ const Become = () => {
             <span className="title-one">Empower your child to </span>
             <div className='scrolling-words-box'>
                 <ul>
-                  <li>be the</li>
-                  <li>next!</li>
+                  <li>be the next!</li>
                 </ul>
             </div>
         </div>

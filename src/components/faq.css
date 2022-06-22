@@ -1,5 +1,5 @@
 .faq-main-wrapper {
-    background-color: black;
+    background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
     padding: 100px;
@@ -7,18 +7,43 @@
 }
 
 .faq-main-header {
-    color: #fff;
+    color: black;
     text-align: center;
 }
 .card-main-wrapper {
-    background-color: black;
-    color: #fff;
+    background-color: #f2f2f2;
+    color: black;
     padding: 20px;
 }
 
 .card-holder {
-    background: rgb(13, 13, 13);
+    background-color: #f2f2f2;
     margin-bottom: 10px;
     padding: 45px;
+    border: 2px solid black;
+}
 
+.card-title-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.1,0.1);
+}
+
+.content-show{
+    font-size: 1.2em;
+    height: auto;
+    max-height: 999px;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.1,0.1);
+}
+
+.content-show p {
+    margin-top: 10px;
 }

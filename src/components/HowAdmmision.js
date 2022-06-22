@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiOutlineForm } from "react-icons/ai";
-import { FaDraftingCompass } from "react-icons/fa";
+import { FaHourglassStart } from "react-icons/fa";
 import { SiPaloaltosoftware } from "react-icons/si";
 import { TbCertificate } from "react-icons/tb";
 import './howAdmission.css';
@@ -23,7 +23,7 @@ const HowAdmmision = () => {
                 </div>
                 <div className='steps-wrapper'>
                     <span className='number-wrapper'>02</span>
-                    <span className='icon-wrapper'><FaDraftingCompass size={50} color="#00D9B6" /></span>
+                    <span className='icon-wrapper'><FaHourglassStart size={50} color="#00D9B6" /></span>
                     <li>
                         STEP TWO <br/>
                         Start and complete the Afrilearn KidsCode classes
@@ -31,20 +31,12 @@ const HowAdmmision = () => {
                 </div>
                 <div className='steps-wrapper'>
                     <span className='number-wrapper'>03</span>
-                    <span className='icon-wrapper'><SiPaloaltosoftware size={50} color="#00D9B6" /></span>
+                    <span className='icon-wrapper'><TbCertificate size={50} color="#00D9B6" /></span>
                     <li>
                         STEP THREE <br/>
                         Get certification and start building projects
                     </li>
                 </div>
-                {/* <div className='steps-wrapper'>
-                    <span className='number-wrapper'>04</span>
-                    <span className='icon-wrapper'><TbCertificate size={50} color="#00D9B6" /></span>
-                    <li>
-                        STEP FOUR <br/>
-                        Get certification of participation
-                    </li>
-                </div> */}
             </ul>
         </div>
     </div>
