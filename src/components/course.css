@@ -1,9 +1,11 @@
 .course-content-main-wrapper {
     position: relative;
     height: 90vh;
-    display:flex;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
     justify-content: center;
     margin-bottom: 80px;
+    background-color: crimson;
 }
 
 .box {
@@ -98,3 +100,17 @@
     bottom: -40px;
 }
 
+
+/* media query for snmall screen */
+/* ===================================== */
+@media screen and (max-width: 960px) {
+    .course-content-main-wrapper {
+        position: relative;
+        height: 90vh;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(3, auto);
+        justify-content: center;
+        margin-bottom: 80px;
+    }
+}

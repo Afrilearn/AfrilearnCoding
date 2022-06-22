@@ -59,7 +59,7 @@ const CourseContent = () => {
             </div>
                  <ul>
                  {courseDataJs && courseDataJs.map((jsData) => 
-                    <li><span><BsCheck /></span>{jsData.content}</li>
+                    <li><span><BsCheck/></span>{jsData.content}</li>
                     )}
                  </ul>
                     <div className="btn-wrapper-content">

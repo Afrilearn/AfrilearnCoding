@@ -16,20 +16,14 @@
 }
 
 .scrolling-words-box {
-  /* height: 3rem; */
-  /* overflow: hidden; */
   color: #84bb29;
   font-size: 3.1875em;
-  /* letter-spacing: -0.01em; */
-  /* line-height: 70px; */
 }
 .scrolling-words-box  {
-  /* margin: 0 0.625rem; */
   padding: 0;
   -moz-transform:translateX(20%);
   -webkit-transform:translateX(20%);	
   transform:translateX(30%);
-  /* Apply animation to this element */	
   -moz-animation: bouncing-next 5s linear infinite alternate;
   -webkit-animation: bouncing-next 5s linear infinite alternate;
   animation: bouncing-next 5s linear infinite alternate;
@@ -61,7 +55,6 @@
 
 .title-one {
     font-size: 3.1875em;
-    /* letter-spacing: -0.01em; */
     line-height: 70px;
     color: #fff;
     
@@ -72,8 +65,6 @@
     font-size: 3.1875em;
     letter-spacing: -0.01em;
     line-height: 70px;
- 
-    
 }
 
 .sroll-up-text {
@@ -83,20 +74,6 @@
     line-height: 70px;
 }
 
-.sroll-up-text li {
-    list-style-type: none;
-}
-
-.scrolling-words-box {
-    /* height: 3rem; */
-    /* overflow: hidden; */
-}
-    
-.scrolling-words-box ul {
-      /* margin: 0 0.625rem; */
-      padding: 0;
-      /* animation: scrollUp 4s infinite; */
-}
 
 .detail-message {
     display: flex;
@@ -105,7 +82,6 @@
     align-items: center;
     text-align: center;
     color: #fff;
-
 }
 
 .detail-message h4 {
@@ -121,7 +97,7 @@
     margin-top: 20px;
 }
 
-.space-wrapper {
+/* .space-wrapper {
     background: rgb(255, 255, 255);
     border-radius:25px;
     margin-bottom: 45px;
@@ -129,7 +105,7 @@
     font-size: 0.8em;
     font-family: AlmarenaBold, sans-serif;
     padding: 10px 20px;
-}
+} */
 
 .btn-navbar {
     background: #84bb29!important;
@@ -145,7 +121,27 @@
     .becomemainwrapper {
         background-color: #29465b;
         font-family: font3!important;
-        width: 100vw;
+        /* width: 100vw; */
     }
 
+    .titlehead {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        padding-top: 10%;
+        gap:10px;
+        font-weight: 600; 
+    }
+
+    .scrolling-words-box {
+        color: #84bb29;
+        font-size: 2.1875em;
+        margin-top: 10px;
+      }
+      .title-one {
+        font-size: 2.1875em;
+        line-height: 0px;
+        color: #fff;
+        
+    }
 }

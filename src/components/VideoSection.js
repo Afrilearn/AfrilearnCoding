@@ -6,7 +6,7 @@ const VideoSection = () => {
   return (
     <div className='video-setionmainwrapper'>
         <div className='title-wrapper'>
-            <h1>Introducing: Afrilearn KidsCode</h1>
+            <h1>Introducing: Afrilearn KidsCode </h1>
         </div>
         <div className='message-wrapper'>
             <p>
@@ -17,7 +17,10 @@ const VideoSection = () => {
         </div>
 
         <div className='video-wrapper'>
-         <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
+         <ReactPlayer
+         className="player-holder"
+         url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
+          />
         </div>
     </div>
   )

@@ -71,6 +71,7 @@
 
     .mainnavbar {
         display: flex;
+        /* width: 90vw; */
         justify-content: space-around;
         align-items: center;
         padding-top: 15px;
