@@ -6,7 +6,6 @@
     display: flex;
     justify-content: space-evenly;
     padding-top: 35px;
-    /* padding-bottom: 15px; */
     font-size: 1em;
     color: #000;
     line-height: 15px;
@@ -29,7 +28,6 @@
     cursor: pointer;
     list-style-type: none;
     font-family: font1!important;
-  
     
 }
 
@@ -47,6 +45,11 @@
 .logo a{
     bottom: 10px;
 }
+
+.logo img {
+    width: 140px;
+
+}
 .nav-link-group {
     display: flex;
     justify-content: flex-end;
@@ -56,4 +59,40 @@
 
 .nav-link-group ul li{
     margin-right: 50px;
+}
+
+.hamburger-btn {
+    display: none;
+}
+
+/* media query for snmall screen */
+/* ===================================== */
+@media screen and (max-width: 960px) {
+
+    .mainnavbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 1em;
+        color: #000;
+        line-height: 15px;
+    }
+    .wrapper-ul {
+        display: none;
+    }
+
+    .btn-navbar {
+        display: none !important;
+    }
+
+    .logo img {
+        width: 40px;
+    
+    }
+    .hamburger-btn {
+        display: block;
+        margin-left: 50px;
+    }
 }

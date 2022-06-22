@@ -58,3 +58,27 @@
     }
     
 }
+
+
+/* media query for snmall screen */
+/* ===================================== */
+@media screen and (max-width: 960px) {
+    .first-image-holder img,
+    .third-image-holder img,
+    .fourth-image-holder img,
+    .second-image-holder img{
+        height: 100px;
+        margin: 5px;
+        border-radius: 20px;
+    }
+
+    .image-holder {
+        text-align: center;
+        width: 20%;
+    }
+
+    .image-holder h1 {
+        font-size: 15px;
+    }
+
+}
