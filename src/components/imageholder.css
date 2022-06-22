@@ -11,13 +11,15 @@
 .third-image-holder img,
 .fourth-image-holder img,
 .second-image-holder img{
-    width: 250px;
+
     height: 200px;
     margin: 20px;
     border-radius: 20px;
 }
 
-
+.image-holder {
+    text-align: center;
+}
 
 .first-image-holder,
 .third-image-holder,
@@ -35,11 +37,25 @@
     animation: bouncing-text 5s linear infinite alternate;
 }
 
-@keyframes drift {
-	from {
-		transform: translateX(100%);
-	}
-	to {
-		transform: translateX(100%);
-	}
+   /* Move it (define the animation) */
+   @-moz-keyframes bouncing-text {
+    0%   { -moz-transform: translateX(50%); }
+    100% { -moz-transform: translateX(-50%); }
+   }
+   @-webkit-keyframes bouncing-text {
+    0%   { -webkit-transform: translateX(50%); }
+    100% { -webkit-transform: translateX(-50%); }
+   }
+   @keyframes bouncing-text {
+    0%   { 
+    -moz-transform: translateX(50%); /* Browser bug fix */
+    -webkit-transform: translateX(50%); /* Browser bug fix */
+    transform: translateX(50%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-50%); /* Browser bug fix */
+    -webkit-transform: translateX(-50%); /* Browser bug fix */
+    transform: translateX(-50%); 
+    }
+    
 }

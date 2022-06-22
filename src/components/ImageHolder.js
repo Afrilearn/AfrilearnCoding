@@ -20,24 +20,28 @@ const ImageHolder = () => {
                 src={Zuckerberg}
                 alt="Zuckerberg"
            />
+           <h1>Zuckerberg</h1>
         </div>
         <div className='image-holder second-image-holder'>
         <img
             src={ElonMusk}
             alt="ElonMusk"
            />
+           <h1>ElonMusk</h1>
         </div>
         <div className='image-holder third-image-holder'>
         <img
                 src={SholaAkinlade}
                 alt="SholaAkinlade"
            />
+            <h1>SholaAkinlade</h1>
         </div>
         <div className='image-holder fourth-image-holder'>
         <img
             src={IyinAboyeji}
             alt="IyinAboyeji"
            />
+           <h1>IyinAboyeji</h1>
         </div>
     </div>
   )
