@@ -14,7 +14,7 @@ const navdata = [
     },
     {
         id: 3,
-        title: "Learning path",
+        title: "About KidsCode",
         url: "faq",
         link:"#faq"
     },

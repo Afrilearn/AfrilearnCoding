@@ -1,10 +1,9 @@
 .main-image-wrapper {
-    /* background-color: brown; */
     justify-content: center;
-    /* height: 50vh; */
     display: flex;
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #f2f2f2;
 
 }
 
@@ -15,6 +14,7 @@
     width: 250px;
     height: 200px;
     margin: 20px;
+    border-radius: 20px;
 }
 
 
@@ -23,18 +23,23 @@
 .third-image-holder,
 .fourth-image-holder,
 .second-image-holder {
-    /* background-color: rgb(179, 156, 156); */
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 25px;
+    /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2); */
     margin: 20px;
-    animation: drift 20s linear infinite;
+    /* animation: drift 20s linear infinite; */
+    -moz-transform:translateX(50%);
+    -webkit-transform:translateX(50%);	
+    transform:translateX(50%);
+    /* Apply animation to this element */	
+    -moz-animation: bouncing-text 5s linear infinite alternate;
+    -webkit-animation: bouncing-text 5s linear infinite alternate;
+    animation: bouncing-text 5s linear infinite alternate;
 }
 
 @keyframes drift {
 	from {
-		transform: translateX(20px);
+		transform: translateX(100%);
 	}
 	to {
-		transform: translateX(-1200px);
+		transform: translateX(100%);
 	}
 }

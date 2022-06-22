@@ -18,7 +18,7 @@ const HowAdmmision = () => {
                     <span className='icon-wrapper'><AiOutlineForm size={50} color="#00D9B6" /></span>
                     <li>
                         STEP ONE <br/>
-                        Fill and submit the application form
+                        Submit application form and pass assessment test
                     </li>
                 </div>
                 <div className='steps-wrapper'>
@@ -26,7 +26,7 @@ const HowAdmmision = () => {
                     <span className='icon-wrapper'><FaDraftingCompass size={50} color="#00D9B6" /></span>
                     <li>
                         STEP TWO <br/>
-                        Take and pass all assessment tests
+                        Start and complete the Afrilearn KidsCode classes
                     </li>
                 </div>
                 <div className='steps-wrapper'>
@@ -34,17 +34,17 @@ const HowAdmmision = () => {
                     <span className='icon-wrapper'><SiPaloaltosoftware size={50} color="#00D9B6" /></span>
                     <li>
                         STEP THREE <br/>
-                        Complete enrolment and begin your journey into Software Engineering
+                        Get certification and start building projects
                     </li>
                 </div>
-                <div className='steps-wrapper'>
+                {/* <div className='steps-wrapper'>
                     <span className='number-wrapper'>04</span>
                     <span className='icon-wrapper'><TbCertificate size={50} color="#00D9B6" /></span>
                     <li>
                         STEP FOUR <br/>
                         Get certification of participation
                     </li>
-                </div>
+                </div> */}
             </ul>
         </div>
     </div>

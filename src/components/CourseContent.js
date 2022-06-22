@@ -43,8 +43,8 @@ const CourseContent = () => {
                  
                     )}
                  </ul>
-                    <div className="btn-wrapper-content">
-                <Button variant="contained" href="https://myafrilearn.com/register" className="btn-navbar">Sign up now</Button>
+                    <div className="btn-wrapper-content btn-wrapper-content-three">
+                <Button variant="contained" href="https://myafrilearn.com/register" className="btn-navbar btn-middle">Sign up now</Button>
             </div>
         </div>
       </div>

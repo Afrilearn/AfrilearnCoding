@@ -14,19 +14,19 @@ const MainNavbar = ({ scrollToSection, faq, courses, process, lPath }) => {
         <NavLink to="/" >
           <img
               src={logo}
-              width={110}
+              width={160}
             />
         </NavLink>
         </div>
         <div className="wrapper-ul">
           <ul>
-            <li onClick={() => scrollToSection(lPath)}>LEARNING PATH</li>
+            <li onClick={() => scrollToSection(lPath)}>ABOUT KIDSCODE</li>
             <li onClick={() => scrollToSection(faq)}>FAQ</li>
             <li onClick={() => scrollToSection(courses)}>COURSE CONTENT</li>
             <li onClick={() => scrollToSection(process)}>ADMISSION PROCESS</li>
           </ul>
         </div>
-        <Button variant="contained" href="https://myafrilearn.com/register" className="btn-navbar">Sign up now</Button>
+        <Button variant="contained" href="https://myafrilearn.com/register" className="btn-navbar main-nav-btn">Sign up now</Button>
     </div>
   )
 }

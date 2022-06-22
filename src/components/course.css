@@ -53,7 +53,8 @@
 }
 
 .stack-top-second ul, .stack-top ul{
-    padding: 10px;
+    /* padding: 10px; */
+    margin-top: 10px;
     margin-left: 30px;
     text-align: start;
 }
@@ -88,5 +89,10 @@
     font-size: 0.8em;
     font-family: AlmarenaBold, sans-serif;
     padding: 10px 20px;
-    margin-left: 35px;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.btn-wrapper-content-three {
+    margin-top: 0px;
 }
