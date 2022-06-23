@@ -24,7 +24,7 @@ const CourseContent = () => {
                     )}
                 </ul>
                     <div className="btn-wrapper-content">
-                <Button variant="contained" href="https://myafrilearn.com/register" className="btn-navbar">Sign up now</Button>
+                <Button variant="contained" href="https://myafrilearn.com/register" className="btn-navbar btn-first">Sign up now</Button>
             </div>
         </div>
       </div>
@@ -63,7 +63,7 @@ const CourseContent = () => {
                     )}
                  </ul>
                     <div className="btn-wrapper-content">
-                <Button variant="contained" href="https://myafrilearn.com/register" className="btn-navbar">Sign up now</Button>
+                <Button variant="contained" href="https://myafrilearn.com/register" className="btn-navbar btn-three-course">Sign up now</Button>
             </div>
         </div>
       </div>

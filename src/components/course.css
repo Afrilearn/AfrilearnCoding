@@ -15,7 +15,7 @@
     /* position: absolute;
     top: 0;
     left: 95px; */
-    /* position: relative; */
+    position: relative;
     background-color: #00d9b6;
     border: solid 2px rgb(56, 53, 53);
 }
@@ -28,7 +28,7 @@
     background-color: #00d9b6;
     /* z-index: 9; */
     /* left: 500px; */
-    /* position: relative; */
+    position: relative;
     border: solid 2px rgb(56, 53, 53);
 
 }
@@ -40,7 +40,7 @@
     background-color: #00d9b6;
     /* left: 900px; */
     /* z-index: 9; */
-    /* position: relative; */
+    position: relative;
     border: solid 2px rgb(56, 53, 53);
 }
 
@@ -49,7 +49,7 @@
     /* z-index: 9; */
     /* margin: 20px; */
     color: #fff;
-    /* position: relative; */
+    position: relative;
     
 }
 
@@ -99,10 +99,13 @@
     padding: 10px 20px;
     margin-left: 15px;
     margin-top: 30px;
-    /* position: absolute;
-    bottom: -40px; */
+    position: absolute;
+    bottom: -40px;
 }
 
+.btn-middle, .btn-first {
+    /* margin-top: 70px; */
+}
 
 /* media query for snmall screen */
 /* ===================================== */
@@ -126,20 +129,21 @@
         padding: 20px;
     }
     
-    .box,.box-two {
+    .box,.box-two, .box-three {
         /* margin-bottom: 20%; */
         /* margin-top: 20%; */
         padding: 20px;
         height: 100%;
         margin: 20px;
-        /* position:relative; */
+        position:static;
     }
     .btn-wrapper-content {
         
         margin-left: 5px;
-        margin-top: 3px;
-        /* position: absolute;
-        bottom: 50%;
-        left: 50%; */
+        margin-top: 43px;
+        top: -90px;
+        position: static;
+
+        
     }
 }
