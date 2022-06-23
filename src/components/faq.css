@@ -47,3 +47,27 @@
 .content-show p {
     margin-top: 10px;
 }
+
+/* media query for snmall screen */
+/* ===================================== */
+@media screen and (max-width: 960px) {
+    .faq-main-wrapper {
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        font-family: font3!important;
+    }
+
+    .faq-main-header {
+        color: black;
+        width: 90%;
+        text-align: center;
+    }
+    .card-title-holder h1{
+        font-size: 1.2em;
+    }
+    .card-holder {
+        padding: 10px;
+    }
+}
