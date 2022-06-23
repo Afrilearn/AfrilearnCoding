@@ -17,6 +17,7 @@
 }
 
 .last-message {
+    margin-top: 20%;
     margin-bottom: 40px;
 }
 .css-1ex1afd-MuiTableCell-root {
@@ -92,3 +93,13 @@ span {
     text-align: start;
 }
 
+
+/* media query for snmall screen */
+/* ===================================== */
+@media screen and (max-width: 960px) {
+    .last-message {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding: 20px;
+    }
+}

@@ -109,13 +109,13 @@
 @media screen and (max-width: 960px) {
     .course-content-main-wrapper {
         /* position: relative; */
-        height: 200vh;
+        height: 90%;
         display: flex;
         flex-direction: column;
         /* grid-template-columns: repeat(3, 50px); */
         justify-content: center;
-        margin-bottom: 50%;
-        margin-top: 20%;
+        /* margin-bottom: 50%; */
+        /* margin-top: 50%; */
         /* gap: 10%; */
     }
     .box-three {

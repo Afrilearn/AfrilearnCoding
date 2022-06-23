@@ -12,6 +12,10 @@
     font-family: font4!important;
 }
 
+.title-header {
+    text-align: center;
+}
+
 .title-header h1 {
     width: 35vw;
     padding-bottom: 25px;
@@ -21,4 +25,19 @@
     margin-bottom: 35px;
     font-family: 'Lato', sans-serif;
     font-size: 1.1em;
+}
+
+/* media query for snmall screen */
+/* ===================================== */
+@media screen and (max-width: 960px) {
+    .learningwrapper {
+        flex-direction: column;
+    }
+    .title-header {
+        text-align: center;
+    }
+    .title-header h1 {
+        width: 65vw;
+        padding-left: 20px;
+    }
 }
