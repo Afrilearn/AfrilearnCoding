@@ -20,37 +20,31 @@
   font-size: 3.1875em;
 }
 .scrolling-words-box  {
-  padding: 0;
-  -moz-transform:translateX(20%);
-  -webkit-transform:translateX(20%);	
-  transform:translateX(30%);
-  -moz-animation: bouncing-next 5s linear infinite alternate;
-  -webkit-animation: bouncing-next 5s linear infinite alternate;
-  animation: bouncing-next 5s linear infinite alternate;
+    position: relative;
+    /* top: 50%;   */
+    width: 10em;
+    /* margin: 0 auto; */
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 280%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(6%);  
 }
 
- /* Move it (define the animation) */
- @-moz-keyframes bouncing-next {
-    0%   { -moz-transform: translateX(10%); }
-    100% { -moz-transform: translateX(10%); }
-   }
-   @-webkit-keyframes bouncing-next {
-    0%   { -webkit-transform: translateX(10%); }
-    100% { -webkit-transform: translateX(150%); }
-   }
-   @keyframes bouncing-next {
-    0%   { 
-    -moz-transform: translateX(30%); /* Browser bug fix */
-    -webkit-transform: translateX(30%); /* Browser bug fix */
-    transform: translateX(10%); 		
-    }
-    100% { 
-    -moz-transform: translateX(-10%); /* Browser bug fix */
-    -webkit-transform: translateX(-10%); /* Browser bug fix */
-    transform: translateX(-10%); 
-    }
-    
-}
+/* Animation */
+.typewriter-text{
+    animation: typewriter 4s steps(44) 1s infinite normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 5em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
 
 
 .title-one {
