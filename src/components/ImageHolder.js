@@ -48,35 +48,35 @@ const ImageHolder = () => {
            />
            <h1>IyinAboyeji</h1>
         </div>
-        <div className='image-holder fifth-image-holder'>
+        <div className='image-holder fourth-image-holder'>
         <img
             src={JudithOkonkwo}
             alt="IyinAboyeji"
            />
            <h1>JudithOkonkwo</h1>
         </div>
-        <div className='image-holder sixth-image-holder'>
+        <div className='image-holder fourth-image-holder'>
         <img
             src={BosunTijani}
             alt="IyinAboyeji"
            />
            <h1>BosunTijani</h1>
         </div>
-        <div className='image-holder seventh-image-holder'>
+        <div className='image-holder fourth-image-holder'>
         <img
             src={TitiAkinsanmi}
             alt="IyinAboyeji"
            />
            <h1>TitiAkinsanmi</h1>
         </div>
-        <div className='image-holder eigth-image-holder'>
+        <div className='image-holder fourth-image-holder'>
         <img
             src={TopeAwotona}
             alt="IyinAboyeji"
            />
            <h1>TopeAwotona</h1>
         </div>
-        <div className='image-holder nineth-image-holder'>
+        <div className='image-holder fourth-image-holder'>
         <img
             src={OdunEweniyi}
             alt="IyinAboyeji"
