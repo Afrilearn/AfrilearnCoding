@@ -5,12 +5,12 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import  logo  from '../images/logo.png';
 import './navbar.css';
 
-const MainNavbar = ({ scrollToSection, faq, courses, process, lPath }) => {
- const [showSideNav, setShowSideNav] = useState(null);
+const MainNavbar = ({ scrollToSection, faq, courses, process, lPath, showMobileMenu }) => {
+//  const [showSideNav, setShowSideNav] = useState(null);
 
- const showSideNavbar = () => {
-   console.log("I am clicked!")
- }
+//  const showSideNavbar = () => {
+//    console.log("I am clicked!")
+//  }
 
   return (
     <div className="mainnavbar">
@@ -30,7 +30,7 @@ const MainNavbar = ({ scrollToSection, faq, courses, process, lPath }) => {
           </ul>
         </div>
         <Button variant="contained" href="https://myafrilearn.com/register" className="btn-navbar main-nav-btn">Sign up now</Button>
-        <div className='hamburger-btn' onClick={showSideNavbar}>
+        <div className='hamburger-btn' onClick={showMobileMenu}>
             <GiHamburgerMenu />
         </div>
     </div>

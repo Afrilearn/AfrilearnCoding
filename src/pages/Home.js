@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import Become from '../components/Become';
 import CourseContent from '../components/CourseContent';
 import WhatYouLearn from '../components/WhatYouLearn';
@@ -11,13 +11,18 @@ import LearningPath from '../components/LearningPath';
 import MainNavbar from '../components/MainNavbar'
 import ScrollMessage from '../components/ScrollMessage';
 import VideoSection from '../components/VideoSection';
+import SideBar from '../components/SideBar';
 
 const Home = () => {
+  const [showSideBar, setShowSideBar] = useState(false);
+
   const faq = useRef(null);
   const courses = useRef(null);
   const process = useRef(null);
   const lPath = useRef(null);
   
+  const showMobileMenu = () => setShowSideBar(!showSideBar)
+
   const scrollToSection = (elementRef) => {
     window.scrollTo({
       top: elementRef.current.offsetTop,
@@ -31,8 +36,11 @@ const Home = () => {
             faq={faq} 
             courses ={courses}
             process = {process}
-            lPath = {lPath} />
+            lPath = {lPath} 
+            showMobileMenu={showMobileMenu}
+            />
             <ScrollMessage />
+            
             {/* <SrollToTop /> */}
             <ImageHolder />
             <Become />
@@ -40,7 +48,19 @@ const Home = () => {
             <div  ref={courses}>
               <CourseContent />
             </div>
+            <div>
+              {showSideBar && <SideBar 
+            scrollToSection={scrollToSection} 
+            faq={faq} 
+            courses ={courses}
+            process = {process}
+            lPath = {lPath}
+            showSideBar={showSideBar}
+            showMobileMenu={showMobileMenu}
+            />
+            }
             
+            </div>
             <WhatYouLearn /> 
             <div  ref={lPath}>           
               <LearningPath />
