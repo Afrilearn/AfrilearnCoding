@@ -5,7 +5,7 @@ const LearningPath = () => {
   return (
     <div className='learningwrapper'>
         <div className='title-header'>
-            <h1>Learning Path</h1>
+            <h1>About KidsCode</h1>
         </div>
         <div>
             <div className='para-learn-one'>
