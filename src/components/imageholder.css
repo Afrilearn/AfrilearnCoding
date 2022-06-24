@@ -98,12 +98,13 @@
     }
 
     @keyframes rightToLeft {
-        0% {
-          transform: translateX(0);
-        } 
-        100% {
-          transform: translateX(calc(-250px * 6));
-        }
+      0% {
+        transform: translateX(0);
       }
+      100% {
+        transform: translateX(calc(-950px));
+      }
+      
+    }
 
 }
