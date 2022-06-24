@@ -20,6 +20,8 @@ const ImageHolder = () => {
 
   return (
     <div className='main-image-wrapper'  >
+        <span>
+        <div className='slider-track'>
         <div ref={myRef} className='image-holder first-image-holder'>
            <img
                 src={Zuckerberg}
@@ -83,6 +85,75 @@ const ImageHolder = () => {
            />
            <h1>OdunEweniyi</h1>
         </div>
+        </div>
+        </span>
+        <span>
+        <div className='slider-track'>
+        <div ref={myRef} className='image-holder first-image-holder'>
+           <img
+                src={Zuckerberg}
+                alt="Zuckerberg"
+           />
+           <h1>Zuckerberg</h1>
+        </div>
+        <div className='image-holder second-image-holder'>
+        <img
+            src={ElonMusk}
+            alt="ElonMusk"
+           />
+           <h1>ElonMusk</h1>
+        </div>
+        <div className='image-holder third-image-holder'>
+        <img
+                src={SholaAkinlade}
+                alt="SholaAkinlade"
+           />
+            <h1>SholaAkinlade</h1>
+        </div>
+        <div className='image-holder fourth-image-holder'>
+        <img
+            src={IyinAboyeji}
+            alt="IyinAboyeji"
+           />
+           <h1>IyinAboyeji</h1>
+        </div>
+        <div className='image-holder fourth-image-holder'>
+        <img
+            src={JudithOkonkwo}
+            alt="IyinAboyeji"
+           />
+           <h1>JudithOkonkwo</h1>
+        </div>
+        <div className='image-holder fourth-image-holder'>
+        <img
+            src={BosunTijani}
+            alt="IyinAboyeji"
+           />
+           <h1>BosunTijani</h1>
+        </div>
+        <div className='image-holder fourth-image-holder'>
+        <img
+            src={TitiAkinsanmi}
+            alt="IyinAboyeji"
+           />
+           <h1>TitiAkinsanmi</h1>
+        </div>
+        <div className='image-holder fourth-image-holder'>
+        <img
+            src={TopeAwotona}
+            alt="IyinAboyeji"
+           />
+           <h1>TopeAwotona</h1>
+        </div>
+        <div className='image-holder fourth-image-holder'>
+        <img
+            src={OdunEweniyi}
+            alt="IyinAboyeji"
+           />
+           <h1>OdunEweniyi</h1>
+        </div>
+        </div>
+        </span>
     </div>
   )
 }
