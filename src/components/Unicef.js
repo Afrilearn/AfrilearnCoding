@@ -21,37 +21,37 @@ const Unicef = () => {
                 <img
                   src={unicef}
                 />
-                UNICEF
+                <span>UNICEF</span>
               </li>
               <li>
                 <img
                     src={business}
                   />
-                Global Citizen
+                <span>Global Citizen</span>
               </li>
               <li>
                 <img
                     src={guardian}
                   />
-                BusinessDay
+                <span>BusinessDay</span>
               </li>
               <li>
               <img
                   src={techcabal}
                 />
-                TechCabal
+                <span>TechCabal</span>
               </li>
               <li>
                 <img
                     src={techcabal}
                   />
-                The Guardian
+                <span>The Guardian</span>
               </li>
               <li>
                 <img
                     src={venture}
                   />
-                VentureBurn
+                <span>VentureBurn</span>
               </li>
             </ul>
         </div>

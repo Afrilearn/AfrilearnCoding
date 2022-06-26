@@ -19,3 +19,11 @@
     width: 120px;
     height: 60px;
 }
+
+/* media query for snmall screen */
+/* ===================================== */
+@media screen and (max-width: 960px) {
+    .main-endorsed-wrapper ul{
+        flex-direction: column;
+    }
+}
