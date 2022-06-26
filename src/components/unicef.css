@@ -12,9 +12,10 @@
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .main-endorsed-wrapper img {
-    width: 60px;
-    margin-left: 10px;
+    width: 120px;
+    height: 60px;
 }
