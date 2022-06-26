@@ -1,0 +1,20 @@
+.main-title {
+    text-align: center;
+}
+
+.main-endorsed-wrapper ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.main-endorsed-wrapper ul li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-endorsed-wrapper img {
+    width: 60px;
+    margin-left: 10px;
+}

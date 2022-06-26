@@ -12,6 +12,7 @@ import MainNavbar from '../components/MainNavbar'
 import ScrollMessage from '../components/ScrollMessage';
 import VideoSection from '../components/VideoSection';
 import SideBar from '../components/SideBar';
+import Unicef from '../components/Unicef';
 
 const Home = () => {
   const [showSideBar, setShowSideBar] = useState(false);
@@ -65,6 +66,7 @@ const Home = () => {
             <div  ref={lPath}>           
               <LearningPath />
             </div>
+            <Unicef />
             <div  ref={process}>
                <HowAdmmision />
             </div>
