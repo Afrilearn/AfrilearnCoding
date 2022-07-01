@@ -1,6 +1,6 @@
 .main-image-wrapper {
     justify-content: center;
-    display: flex;
+    /* display: flex; */
     padding-top: 50px;
     padding-bottom: 20px;
     background-color: #f2f2f2;

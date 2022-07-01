@@ -17,7 +17,7 @@ import TopeAwotona from '../images/TopeAwotona.png';
 const ImageHolder = () => {
 
    const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       slidesToShow: 6,
       slidesToScroll: 1,
@@ -31,8 +31,9 @@ const ImageHolder = () => {
    // const executeScroll = () => scrollToRef(myRef)
 
   return (
+     <div className='main-image-wrapper'>
 
-   <Slider {...settings} className='main-image-wrapper' >
+   <Slider {...settings}  >
         <div  className='image-holder first-image-holder'>
            <img
                 src={Zuckerberg}
@@ -97,6 +98,7 @@ const ImageHolder = () => {
            <h1>OdunEweniyi</h1>
         </div>
         </Slider>
+        </div>
   )
 }
 
