@@ -9,6 +9,7 @@ const SideBar = ({scrollToSection, faq, courses, process, lPath, showSideBar, sh
           <div className="logo">
         <NavLink to="/" >
           <img
+          alt='logo'
               src={logo}
             />
         </NavLink>

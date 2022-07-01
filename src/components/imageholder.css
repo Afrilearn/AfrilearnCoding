@@ -31,24 +31,24 @@
     margin: 10px;
     display: flex;
     /* width: 30%; */
-    animation-name: rightToLeft;
+    /* animation-name: rightToLeft;
     animation-duration: 16.5s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 
 }
 
-.slider-track-two{
+/* .slider-track-two{
     margin: 10px;
-    display: flex;
+    display: flex; */
     /* width: 40%; */
-    animation-name: secondrightToLeft;
+    /* animation-name: secondrightToLeft;
     animation-duration: 30.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-}
+} */
 
-@keyframes secondrightToLeft {
+/* @keyframes secondrightToLeft {
   0% {
     transform: translateX(0);
   }
@@ -56,7 +56,7 @@
     transform: translateX(calc(-600px));
   }
   
-}
+} */
 
 @keyframes rightToLeft {
     0% {

@@ -22,7 +22,7 @@
 .scrolling-words-box  {
     position: relative;
     /* top: 50%;   */
-    width: 10em;
+    /* width: 1em; */
     /* margin: 0 auto; */
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 280%;
@@ -51,7 +51,6 @@
     font-size: 3.1875em;
     line-height: 70px;
     color: #fff;
-    
 }
 
 .title-two {
@@ -91,16 +90,6 @@
     margin-top: 20px;
 }
 
-/* .space-wrapper {
-    background: rgb(255, 255, 255);
-    border-radius:25px;
-    margin-bottom: 45px;
-    color: rgb(15, 15, 25);
-    font-size: 0.8em;
-    font-family: AlmarenaBold, sans-serif;
-    padding: 10px 20px;
-} */
-
 .btn-navbar {
     background: #84bb29!important;
     border-radius: 20px !important;
@@ -128,11 +117,6 @@
         font-weight: 600; 
     }
 
-    /* .scrolling-words-box {
-        color: #84bb29;
-        font-size: 2.1875em;
-        margin-top: 10px;
-      } */
       .title-one {
         font-size: 2.1875em;
         line-height: 0px;

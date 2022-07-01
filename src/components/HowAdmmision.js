@@ -1,7 +1,6 @@
 import React from 'react';
 import { AiOutlineForm } from "react-icons/ai";
 import { FaHourglassStart } from "react-icons/fa";
-import { SiPaloaltosoftware } from "react-icons/si";
 import { TbCertificate } from "react-icons/tb";
 import './howAdmission.css';
 

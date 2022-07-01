@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -17,6 +17,7 @@ const MainNavbar = ({ scrollToSection, faq, courses, process, lPath, showMobileM
         <div className="logo">
         <NavLink to="/" >
           <img
+          alt='logo'
               src={logo}
             />
         </NavLink>

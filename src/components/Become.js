@@ -1,13 +1,12 @@
 import React from 'react';
 import Button from '@mui/material/Button';
-import { BsArrowRightShort } from 'react-icons/bs';
 import './become.css';
 
 const Become = () => {
   return (
     <div className='becomemainwrapper'>
         <div className='titlehead'>
-            <span className="title-one">Your child can </span>
+            <h1 className="title-one">Your child can </h1>
             <h1 className='scrolling-words-box typewriter-text'>
               be the next! 
             </h1>
