@@ -1,7 +1,7 @@
 {
   "name": "afrilearncoding",
   "version": "0.1.0",
-  "homepage": "http://kidscode.myafrilearn.com/",
+  "homepage": "https://kidscode.myafrilearn.com/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",

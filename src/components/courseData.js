@@ -1,7 +1,7 @@
 export const courseDataHtml = [
     {
         id: 1,
-        content: "Computer Software and Hardware.",
+        content: "Computer Software",
         mode: "Animation, Storytelling"
     },
     {
@@ -11,22 +11,22 @@ export const courseDataHtml = [
     },
     {
         id: 3,
-        content: "HTML Headings and Paragraphs.",
+        content: "HTML Headings",
         mode: "Animation, Storytelling"
     },
     {
         id: 4,
-        content: "HTML Comments, Color, Styling and HTML attributes",
+        content: "HTML Comments, Styling",
         mode: "Animation, Storytelling"
     },
     {
         id: 5,
-        content: "HTML Links, HTML Link syntax, HTML Link Attributes.",
+        content: "HTML Link syntax",
         mode: "Animation, Storytelling"
     },
     {
         id: 6,
-        content: "HTML Images, Background Images, Images Map",
+        content: "HTML Images, Images Map",
         mode: "Animation, Storytelling"
     },
     {
