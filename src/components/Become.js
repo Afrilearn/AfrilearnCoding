@@ -14,7 +14,7 @@ const Become = () => {
         <div className='detail-message'>
            
               <h4>
-              Transform your child's life with Coding Skills, in 3 months 
+              Transform your child's life with <b className='bolder'>Coding Skills, in 3 months</b> 
                 </h4>
               
             <div className="btn-wrapper">
