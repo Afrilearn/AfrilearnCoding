@@ -157,4 +157,7 @@
 
         
     }
+    .right-boxes, .middle-boxes, .left-boxes {
+        width: 90%;
+    }
 }
