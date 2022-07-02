@@ -16,17 +16,6 @@ import techbuild from '../images/techbuild.png';
 
 const Unicef = () => {
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
-    cssEase: "linear"
-  };
-
 
   return (
     <>
@@ -35,44 +24,20 @@ const Unicef = () => {
       </div>
  
     <div className='main-image-wrapper-endorsed'>
-      
-    <Slider {...settings}  >
          <div  className='first-image-holder-endorsed'>
-            <img
+         <img
                  src={unicef}
                  alt="unicef"
             />
          </div>
-         <div className='second-image-holder-endorsed'>
-         <img
-             src={Technext}
-             alt="Technext"
-            />
-         </div>
-         <div className='third-image-holder-endorsed'>
-         <img
-                 src={TheNation}
-                 alt="TheNation"
-            />
-         </div>
-         <div className='fourth-image-holder-endorsed'>
-         <img
-             src={guardian}
-             alt="guardian"
-            />
-         </div>
+
          <div className='fourth-image-holder-endorsed'>
          <img
              src={techcabal}
              alt="techcabal"
             />
          </div>
-         <div className='fourth-image-holder-endorsed'>
-         <img
-             src={venture}
-             alt="venture"
-            />
-         </div>
+     
          <div className='fourth-image-holder-endorsed'>
          <img
              src={USChambers}
@@ -97,7 +62,6 @@ const Unicef = () => {
              alt="techbuild"
             />
          </div>
-         </Slider>
          </div>
          </>
   )
