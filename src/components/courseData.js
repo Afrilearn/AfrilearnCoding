@@ -1,7 +1,7 @@
 export const courseDataHtml = [
     {
         id: 1,
-        content: "Computer Software",
+        content: "Computer Software Software",
         mode: "Animation, Storytelling"
     },
     {

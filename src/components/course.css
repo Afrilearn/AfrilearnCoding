@@ -2,7 +2,7 @@
     /* position: relative; */
     height: 90vh;
     display: flex;
-    width: 90%;
+    width: 100%;
     /* grid-template-columns: repeat(3, 50px); */
     justify-content: center;
     margin-bottom: 80px;
@@ -10,19 +10,23 @@
 }
 
 .box {
-    width: 90%;
+    /* width: 100%; */
     height: 100%;            
     /* position: absolute;
     top: 0;
     left: 95px; */
-    margin-left: 30px;
+    /* margin-left: 30px; */
     position: relative;
     background-color: #00d9b6;
     border: solid 2px rgb(56, 53, 53);
 }
 
+.right-boxes, .middle-boxes, .left-boxes {
+    width: 30%;
+}
+
 .box-two {
-    width: 110%;
+    /* width: 100%; */
     height: 100%;            
     /* position: absolute;
     top: 0; */
@@ -36,13 +40,13 @@
 }
 
 .box-three {
-    width: 110%;
+    /* width: 100%; */
     height: 100%;            
     /* position: absolute; */
     background-color: #00d9b6;
     /* left: 900px; */
     /* z-index: 9; */
-    margin-left: 50px;
+    /* margin-left: 50px; */
     position: relative;
     border: solid 2px rgb(56, 53, 53);
 }
