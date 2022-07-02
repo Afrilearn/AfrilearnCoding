@@ -13,9 +13,11 @@ const Become = () => {
         </div>
         <div className='detail-message'>
            
-              <h4>
-              Transform your child's life with <b className='bolder'>Coding Skills, in 3 months</b> 
-                </h4>
+              <div className="write-up-wrapper">
+                <h4>
+                Transform your child's life with</h4> <h4 className="coding-wrapper"> Coding Skills</h4> <h4>in</h4><h4 className="coding-wrapper">3 months</h4>
+                  
+              </div>
               
             <div className="btn-wrapper">
                 <Button variant="contained" href="https://myafrilearn.com/register" className="btn-navbar">Sign up now</Button>

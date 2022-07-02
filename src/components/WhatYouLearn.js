@@ -22,9 +22,7 @@ const WhatYouLearn = () => {
 
 
         <div className='last-message'>
-            <h1>Got any questions? <br />
-            We're happy to help!
-            </h1>
+            <h1>Got any questions? </h1>
             <h3>Simply send us an email at hello@myafrilearn.com. <br/>Hotlines: Nigeria +234 805 154 4949, UK +44 7950 969091, Canada +1 236 999 4838</h3>
         </div>
     </div>

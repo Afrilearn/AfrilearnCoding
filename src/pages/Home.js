@@ -73,7 +73,7 @@ const Home = () => {
             <div ref={faq}>
               <FAQ />
             </div>
-            <Footer />
+            {/* <Footer /> */}
       </>
     
   )

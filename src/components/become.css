@@ -20,7 +20,17 @@
   font-size: 3.1875em;
 }
 
+.write-up-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    width: 50%;
+}
 
+.coding-wrapper {
+    font-weight: 20em !important;
+    color: #84bb29;
+}
 
 .scrolling-words-box  {
     position: relative;
@@ -125,5 +135,10 @@
         line-height: 0px;
         color: #fff;
         
+    }
+    .write-up-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
 }

@@ -8,7 +8,7 @@ import IyinAboyeji from '../images/Iyin-Aboyeji.png';
 import JudithOkonkwo from '../images/JudithOkonkwo.png';
 import BosunTijani from '../images/BosunTijani.png';
 import OdunEweniyi from '../images/OdunEweniyi.png';
-import TitiAkinsanmi from '../images/TitiAkinsanmi.png';
+import Yanmo from '../images/YamnoOmorogbe.png';
 import TopeAwotona from '../images/TopeAwotona.png';
 
 
@@ -40,63 +40,63 @@ const ImageHolder = () => {
                 src={Zuckerberg}
                 alt="Zuckerberg"
            />
-                <h1>Zuckerberg</h1>
+                <h1>Mark - Facebook</h1>
         </div>
         <div className='image-holder second-image-holder'>
         <img
             src={ElonMusk}
             alt="ElonMusk"
            />
-           <h1>ElonMusk</h1>
+           <h1>Elon - Tesla</h1>
         </div>
         <div className='image-holder third-image-holder'>
         <img
                 src={SholaAkinlade}
                 alt="SholaAkinlade"
            />
-            <h1>SholaAkinlade</h1>
+            <h1>Shola - Paystack</h1>
         </div>
         <div className='image-holder fourth-image-holder'>
         <img
             src={IyinAboyeji}
             alt="IyinAboyeji"
            />
-           <h1>IyinAboyeji</h1>
+           <h1>Iyin - Andela</h1>
         </div>
         <div className='image-holder fourth-image-holder'>
         <img
             src={JudithOkonkwo}
             alt="IyinAboyeji"
            />
-           <h1>JudithOkonkwo</h1>
+           <h1>Judith - AR/VR Africa</h1>
         </div>
         <div className='image-holder fourth-image-holder'>
         <img
             src={BosunTijani}
             alt="IyinAboyeji"
            />
-           <h1>BosunTijani</h1>
+           <h1>Bosun - CCHub</h1>
         </div>
         <div className='image-holder fourth-image-holder'>
         <img
-            src={TitiAkinsanmi}
-            alt="IyinAboyeji"
+            src={Yanmo}
+            alt="Yanmo"
            />
-           <h1>TitiAkinsanmi</h1>
+           <h1>Yanmo - Bamboo</h1>
         </div>
         <div className='image-holder fourth-image-holder'>
         <img
             src={TopeAwotona}
             alt="IyinAboyeji"
            />
-           <h1>TopeAwotona</h1>
+           <h1>Tope - Calendly</h1>
         </div>
         <div className='image-holder fourth-image-holder'>
         <img
             src={OdunEweniyi}
             alt="IyinAboyeji"
            />
-           <h1>OdunEweniyi</h1>
+           <h1>Odun - Piggyvest</h1>
         </div>
         </Slider>
         </div>
