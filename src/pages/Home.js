@@ -5,7 +5,6 @@ import WhatYouLearn from '../components/WhatYouLearn';
 import HowAdmmision from '../components/HowAdmmision';
 import SrollToTop from '../components/SrollToTop';
 import FAQ from '../components/FAQ';
-import Footer from '../components/Footer';
 import ImageHolder from '../components/ImageHolder';
 import LearningPath from '../components/LearningPath';
 import MainNavbar from '../components/MainNavbar'
@@ -13,6 +12,7 @@ import ScrollMessage from '../components/ScrollMessage';
 import VideoSection from '../components/VideoSection';
 import SideBar from '../components/SideBar';
 import Unicef from '../components/Unicef';
+import Footer from './../components/Footer';
 
 const Home = () => {
   const [showSideBar, setShowSideBar] = useState(false);
@@ -73,6 +73,7 @@ const Home = () => {
             <div ref={faq}>
               <FAQ />
             </div>
+            <Footer />
       </>
     
   )

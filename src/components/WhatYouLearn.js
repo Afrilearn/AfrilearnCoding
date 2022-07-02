@@ -18,81 +18,14 @@ import { NavLink } from 'react-router-dom';
 const WhatYouLearn = () => {
   return (
       <div className='over-all-wrapper'>
-        {/* <div className="over-all-title">
-            <h1>What will I learn?</h1>
-        </div> */}
-    {/* <div className='why-content-main-wrapper'>
-       
-      <div className='left-boxes'>
-        <div className='box'></div>
-        <div className='box stack-top'>
-        <div className='image-wrapper'>
-                <SiMicrosoftaccess size={50}/>
-            </div>
-        <TableContainer component={Paper}>
-            <Table  aria-label="custom pagination table">
-                <TableHead>
-                <TableRow>
-                    <TableCell>Course Outline </TableCell>
-                    <TableCell>Mode of teaching </TableCell>
-                </TableRow>
-                </TableHead>
-                <TableBody>
-                 {courseDataHtml.map((row) => (
-                <TableRow
-                key={row.id}
-                sx={{  border: 1  }}
-                >
-                <TableCell component="th" scope="row">
-                    {row.content}
-                </TableCell>
-                <TableCell>{row.mode}</TableCell>
-                
-                </TableRow>
-                  ))}
-                </TableBody>
-            </Table>
-            </TableContainer>
-        </div>
-      </div>
-      <div className='right-boxes'>
-        <div className='box-two'></div>
-        <div className='box-two stack-top-second'>
-            <div className='image-wrapper'>
-                <DiHtml53DEffects size={60}/>
-            </div>
-          
-            <TableContainer component={Paper}>
-            <Table  aria-label="custom pagination table">
-                <TableHead>
-                <TableRow>
-                    <TableCell>Course Outline </TableCell>
-                    <TableCell>Mode of teaching </TableCell>
-                </TableRow>
-                </TableHead>
-                <TableBody>
-                 {courseDataCss.map((row) => (
-                <TableRow
-                key={row.id}
-                sx={{  border: 1  }}
-                >
-                <TableCell component="th" scope="row">
-                    {row.content}
-                </TableCell>
-                <TableCell>{row.mode}</TableCell>
-                
-                </TableRow>
-                  ))}
-                </TableBody>
-            </Table>
-            </TableContainer>
-        </div>
-      </div> */}
+        
 
-    {/* </div> */}
+
         <div className='last-message'>
-            <h1>Not sure what to do next?</h1>
-            <h3>We are here to help you. <a href="https://myafrilearn.com/contact">Speak with a learning advisor</a></h3>
+            <h1>Got any questions? <br />
+            We're happy to help!
+            </h1>
+            <h3>Simply send us an email at hello@myafrilearn.com. <br/>Hotlines: Nigeria +234 805 154 4949, UK +44 7950 969091, Canada +1 236 999 4838</h3>
         </div>
     </div>
   )

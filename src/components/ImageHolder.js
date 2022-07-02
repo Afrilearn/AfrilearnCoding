@@ -36,10 +36,11 @@ const ImageHolder = () => {
    <Slider {...settings}  >
         <div  className='image-holder first-image-holder'>
            <img
+         
                 src={Zuckerberg}
                 alt="Zuckerberg"
            />
-           <h1>Zuckerberg</h1>
+                <h1>Zuckerberg</h1>
         </div>
         <div className='image-holder second-image-holder'>
         <img
