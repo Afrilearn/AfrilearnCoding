@@ -19,7 +19,7 @@ const VideoSection = () => {
         <div className='video-wrapper'>
          <ReactPlayer
          className="player-holder"
-         url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
+         url='https://www.youtube.com/watch?v=EU53XF8gIyA'
           />
         </div>
     </div>

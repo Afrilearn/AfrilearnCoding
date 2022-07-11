@@ -5,7 +5,6 @@ const FaqCard = ({faqData}) => {
   const [selectedItem, setSelectedItem] = useState(null);
 
   const toggleItem = (id) => {
-    console.log(id)
     if(selectedItem === id){
       return setSelectedItem(null)
     }
