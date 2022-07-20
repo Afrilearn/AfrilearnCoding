@@ -1,15 +1,16 @@
 import React, { useState} from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import  logo  from '../../images/logo.png';
-import { useDispatch, useSelector } from 'react-redux';
 import MainNavbar from '../../components/MainNavbar';
 
+import { registerUserInitiate } from '../../redux/actions/registerUser';
+import  logo  from '../../images/logo.png';
 import styles from './register.module.css';
 
 const RegistrationForm = () => {
-    // const dispatch = useDispatch();
+    const dispatch = useDispatch();
 
   const [fullName, setFullName ] = useState('');
   const [studentRole, setStudentRole ] = useState("Student");
@@ -18,11 +19,20 @@ const RegistrationForm = () => {
   const [email, setEmail] = useState('');
   const [phonenumber, setPhonenumber] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
 
+  
+ 
+	// "fullName": "Michael Oladele",
+	// "email": "something@gmail.com",
+	// "password": "test123456",
+	// "confirmPassword": "test123456",
+	// "role": "606ed82e70f40e18e029165e",
+	// "course": "kidsCode"
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(role, course, fullName, email, phonenumber, password)
-        // dispatch(resgisterNominationInitiate(name, phonenumber, email, selected, nominee))
+        console.log(fullName, email, password, confirmPassword, role, course)
+        dispatch(registerUserInitiate(fullName, email, password, confirmPassword, role, course))
         setEmail('')
         setStudentRole("Student")
         setFullName('')
@@ -106,6 +116,16 @@ const RegistrationForm = () => {
                 name='password'
                 value= {password}
                 onChange={(e) => setPassword(e.target.value)}
+                required
+                />
+                <input 
+                type="password"
+                className='down-input color-nominee'
+                placeholder='confirmPassword'
+                id='confirmPassword'
+                name='confirmPassword'
+                value= {confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
                 required
                 />
                 

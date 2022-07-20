@@ -13,4 +13,22 @@ export const registerUserFail = (error) => ({
     payload: error
 });
 
+export const registerUserInitiate = (fullName, email, password, confirmPassword, role, course) => {
+    return function (dispatch) {
+        console.log("API call ==> ", fullName, email, password, confirmPassword, role, course)
+        dispatch(registerUserStart())
+        axios
+            .post('https://afrilearn-backend-01.herokuapp.com/api/v1/auth/signup',
+              {
+                fullName, email, password, confirmPassword, role, course
+              }
+            )
+            .then((res) => {
+                dispatch(registerUserSuccess(res.data))
+            })
+            .catch((error) => dispatch(registerUserFail(error)))
+    }   
+}
+
+
 

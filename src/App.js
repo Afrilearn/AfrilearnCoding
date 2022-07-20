@@ -1,7 +1,6 @@
 import './App.css';
 import { Route, Routes } from 'react-router';
 import Home from './pages/Home';
-import Apply from './pages/Apply';
 import Products from './pages/Products';
 import SrollToTop from './components/SrollToTop';
 import RegistrationForm from './pages/registeration/RegistrationForm';
