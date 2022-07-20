@@ -27,8 +27,13 @@
 
 .formbtncheckout {
     padding: 10px 45px;
-    border-radius: 15px;
+    border-radius: 10px;
     border: none;
+    background-color: #84bb29;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.975rem;
+    line-height: 1.75;
 }
 .inner-wrapper {
     color: aliceblue;

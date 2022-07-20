@@ -12,26 +12,23 @@ const RegistrationForm = () => {
     // const dispatch = useDispatch();
 
   const [fullName, setFullName ] = useState('');
-  const [role, setRole ] = useState("Student");
+  const [studentRole, setStudentRole ] = useState("Student");
+  const [role, setRole ] = useState("5fd08fba50964811309722d5");
   const [course, setCourse ] = useState('KidsCode');
   const [email, setEmail] = useState('');
   const [phonenumber, setPhonenumber] = useState('');
   const [password, setPassword] = useState('');
-  const [nominee, setNominee] = useState('');
-  const [selected, setSelected] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(role, course, fullName, email, phonenumber, password)
         // dispatch(resgisterNominationInitiate(name, phonenumber, email, selected, nominee))
         setEmail('')
-        setNominee('')
-        setRole('')
+        setStudentRole("Student")
         setFullName('')
-        setCourse('')
+        setCourse('KidsCode')
         setPhonenumber('')
         setPassword('')
-        setSelected('')
         }
 
   return (
@@ -45,18 +42,6 @@ const RegistrationForm = () => {
             />
         </NavLink>
         </div>
-        <div className="wrapper-ul">
-          {/* <ul>
-            <li onClick={() => scrollToSection(lPath)}>ABOUT KIDSCODE</li>
-            <li onClick={() => scrollToSection(faq)}>FAQ</li>
-            <li onClick={() => scrollToSection(courses)}>COURSE CONTENT</li>
-            <li onClick={() => scrollToSection(process)}>ADMISSION PROCESS</li>
-          </ul> */}
-        </div>
-        {/* <Button variant="contained" href="/apply" className="btn-navbar main-nav-btn">Sign up now</Button> */}
-        {/* <div className='hamburger-btn' onClick={showMobileMenu}>
-            <GiHamburgerMenu />
-        </div> */}
     </div>
         <div className="inner-wrapper">
             <div className={styles.headerbornagain}>
@@ -70,7 +55,7 @@ const RegistrationForm = () => {
                 id='role'
                 name='role'
                 default = "Student"
-                value= {role}
+                value= {studentRole}
                 onChange={(e) => setRole(e.target.value)}
                 required
                 />
