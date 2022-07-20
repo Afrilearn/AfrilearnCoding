@@ -20,7 +20,7 @@ const Become = () => {
               </div>
               
             <div className="btn-wrapper">
-                <Button variant="contained" href="https://myafrilearn.com/register" className="btn-navbar">Sign up now</Button>
+                <Button variant="contained" href="/apply" className="btn-navbar">Sign up now</Button>
             </div>
 
         </div>
