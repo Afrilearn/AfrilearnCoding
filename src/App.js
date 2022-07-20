@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Apply from './pages/Apply';
 import Products from './pages/Products';
 import SrollToTop from './components/SrollToTop';
+import RegistrationForm from './pages/registeration/RegistrationForm';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <SrollToTop />
        <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/apply" element={<Apply />} />
+        <Route exact path="/apply" element={<RegistrationForm />} />
         <Route exact path="/student/products" element={<Products />} />
         
       </Routes>

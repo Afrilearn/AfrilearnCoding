@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+
+.selected-input {
+    background-color: rgba(255,255,255,0.14);
+    font-family: "Montserrat", Sans-serif;
+    margin: 2px;
+    border: none;
+    width: 26%;
+    padding: 3%;
+    color: #ffffff;
+    
+}
+.mainnavbar {
+    text-align: center;
+    margin-top: 20px;
+}
+.bornagainwrapperform {
+    display: flex;
+}
+
+.formtofill input{
+    width: 35%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.formbtncheckout {
+    padding: 10px 45px;
+    border-radius: 15px;
+    border: none;
+}
+.inner-wrapper {
+    color: aliceblue;
+    text-align: center;
+    width: 45%;
+    margin-top: 5%;
+}
+.top-input {
+    width: 78%;
+    margin-top: 5%;
+    padding: 3%;
+    border: none;
+}
+
+.down-input {
+    margin: 2px;
+    border: none;
+    width: 36%;
+    padding: 3%;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.headerbornagain {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.color-nominee {
+    color: black;
+}
+
+
+.born-again-wrapper-form {
+    background-color: #360051;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7%;
+    height: 85.3vh;
+}
+
+@media screen and (max-width: 960px) { 
+    .selected-input {
+        width: 90%;
+    }
+}
