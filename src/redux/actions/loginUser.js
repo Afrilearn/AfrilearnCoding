@@ -21,7 +21,6 @@ export const loginUserInitiate = (email, password) => {
               {
                 email,
                 password
-               
               }
             )
             .then((res) => {

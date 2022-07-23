@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate} from 'react-router-dom';
 import Button from '@mui/material/Button';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import MainNavbar from '../../components/MainNavbar';
@@ -11,6 +11,7 @@ import styles from '../registeration/register.module.css';
 
 const LoginForm = () => {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -23,6 +24,7 @@ const LoginForm = () => {
         dispatch(loginUserInitiate(email, password))
         setEmail('')
         setPassword('')
+        navigate('/subscribe')
         }
 
   return (

@@ -1,6 +1,7 @@
 import React, { useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import MainNavbar from '../../components/MainNavbar';
@@ -11,7 +12,10 @@ import styles from './register.module.css';
 
 const RegistrationForm = () => {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const user = useSelector(state => state.registerUser.data)
 
+    console.log("After registration =>", user)
   const [fullName, setFullName ] = useState('');
   const [studentRole, setStudentRole ] = useState("Student");
   const [role, setRole ] = useState("5fd08fba50964811309722d5");
@@ -31,7 +35,6 @@ const RegistrationForm = () => {
 	// "course": "kidsCode"
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(fullName, email, password, confirmPassword, role, course)
         dispatch(registerUserInitiate(fullName, email, password, confirmPassword, role, course))
         setEmail('')
         setStudentRole("Student")
@@ -39,6 +42,8 @@ const RegistrationForm = () => {
         setCourse('KidsCode')
         setPhonenumber('')
         setPassword('')
+        navigate('/subscribe')
+        
         }
 
   return (
