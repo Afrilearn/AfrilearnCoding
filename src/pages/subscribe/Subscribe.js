@@ -25,12 +25,12 @@ const registerUser_id = useSelector(state => state.registerUser?.data?.data.user
     console.log(" registerUser_id  from Payment plans =>", registerUser_id?.id)
   const [duration, setDuration ] = useState('Duration:- 3 months');
   const [course, setCourse ] = useState('KidsCode');
-  const [price, setPrice] = useState('100,000');
-  const publicKey = "pk_your_public_key_here"
-  const amount = 1000000 // Remember, set in kobo!
-  const [email, setEmail] = useState("")
-  const [name, setName] = useState("")
-  const [phone, setPhone] = useState("")
+  const [price, setPrice] = useState(10000000);
+  const publicKey = "pk_live_b832dc6c78087f0868d38381945928d5cbc57265"
+  // const amount = 1000000 // Remember, set in kobo!
+  const [email, setEmail] = useState("micheaol@gmail.com")
+  const [name, setName] = useState("Michael Oladele")
+  const [phone, setPhone] = useState("2345556666")
 
   const result = Object.values(paymentPlans);
   const [modalShow, setModalShow] = React.useState(false);
@@ -44,7 +44,7 @@ const registerUser_id = useSelector(state => state.registerUser?.data?.data.user
 
   const componentProps = {
     email,
-    amount,
+    amount: price,
     metadata: {
       name,
       phone,
