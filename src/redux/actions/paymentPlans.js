@@ -14,37 +14,29 @@ export const getPaymentFail = (error) => ({
 });
 
 
-export const makePaymentStart = () => ({
-    type: types.GET_PAYMENT_PLANS_START
-});
-export const makePaymentSuccess = (payload) => ({
-    type: types.GET_PAYMENT_PLANS_SUCCESS,
+export const verifyPaymentSuccess = (payload) => ({
+    type: types.PAYMENT_VERIFICATION_SUCCESS,
     payload
 });
-export const makePaymentFail = (error) => ({
-    type: types.GET_PAYMENT_PLANS_FAIL,
+export const verifyPaymentFail = (error) => ({
+    type: types.PAYMENT_VERIFICATION_FAILURE,
     payload: error
 });
 
 
 
-export const makePaymentInitiate = (courseId, paymentId, userId) => {
-    console.log("API params", courseId, paymentId, userId)
+export const verifyPaystackPaymentInitiate = (data) => {
+    console.log("API params", data)
     return function (dispatch) {
-        dispatch(makePaymentStart())
         axios
-            .post(`https://afrilearn-backend-01.herokuapp.com/api/v1/${userId}/pay`,
-            
+            .post("https://afrilearn-backend-01.herokuapp.com/api/v1/payments/verify-paystack-payment",
             {
-                courseId,
-                paymentId
-            }
-
-            )
-            .then((res) => {
-                dispatch(makePaymentSuccess(res.data))
+                data
             })
-            .catch((error) => dispatch(makePaymentFail(error)))
+            .then((res) => {
+                dispatch(verifyPaymentSuccess(res.data))
+            })
+            .catch((error) => dispatch(verifyPaymentFail(error)))
     }   
 }
 

@@ -7,55 +7,81 @@ import Button from '@mui/material/Button';
 import { PaystackButton } from 'react-paystack'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import MainNavbar from '../../components/MainNavbar';
+import { usePaystackPayment } from 'react-paystack';
 
-import { getPaymentInitiate, makePaymentInitiate } from '../../redux/actions/paymentPlans';
+import { getPaymentInitiate, verifyPaystackPaymentInitiate } from '../../redux/actions/paymentPlans';
 import styles from '../../pages/registeration/register.module.css';
 import  logo  from '../../images/logo.png';
 import ShowPaymentInfo from '../../components/modal/ShowPaymentInfo';
+
+
 
 const Subscribe = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const [userId, setUserId] = useState('');
-const paymentPlans = useSelector(state => state.payMe)
-const loginUser_id = useSelector(state => state.loginUser?.data?.data?.user)
-const registerUser_id = useSelector(state => state.registerUser?.data?.data.user)
+    const paymentPlans = useSelector(state => state.payMe)
+    const loginUser_id = useSelector(state => state.loginUser?.data?.data?.user)
+    const registerUser_id = useSelector(state => state.registerUser?.data?.data.user)
 
-    console.log("loginUser_id from Payment plans =>", loginUser_id?.id)
-    console.log(" registerUser_id  from Payment plans =>", registerUser_id?.id)
-  const [duration, setDuration ] = useState('Duration:- 3 months');
-  const [course, setCourse ] = useState('KidsCode');
-  const [price, setPrice] = useState(10000000);
-  const publicKey = "pk_live_b832dc6c78087f0868d38381945928d5cbc57265"
-  // const amount = 1000000 // Remember, set in kobo!
-  const [email, setEmail] = useState("micheaol@gmail.com")
-  const [name, setName] = useState("Michael Oladele")
-  const [phone, setPhone] = useState("2345556666")
+      console.log("loginUser_id from Payment plans =>", loginUser_id?.id)
+      console.log(" registerUser_id  from Payment plans =>", registerUser_id?.id)
+    const [duration, setDuration ] = useState('Duration:- 3 months');
+    const [course, setCourse ] = useState('KidsCode');
+    const [price, setPrice] = useState(5000);
+    //const publicKey = "pk_live_643a3ea8170fabb90afd7c0d94aa7bfa9d73c16d"
+    
+    const [email, setEmail] = useState("micheaol@gmail.com")
+    // const [name, setName] = useState("Michael Oladele")
+    // const [phone, setPhone] = useState("2345556666")
 
-  const result = Object.values(paymentPlans);
-  const [modalShow, setModalShow] = React.useState(false);
-  
-  const testData = result.map((payment) => payment[4]);
-  const courseId = testData.map((td) => td)
-  const paymentId = testData.map((td) => td.category)
-  console.log("course go =>", courseId[0]?.id)
-  console.log("payment go =>", paymentId[0]?.id)
+    const result = Object.values(paymentPlans);
+    //const [modalShow, setModalShow] = React.useState(false);
+    
+    const testData = result.map((payment) => payment[4]);
+    const courseId = testData.map((td) => td)
+    const paymentId = testData.map((td) => td?.category)
+    console.log("course go =>", courseId[0]?.id)
+    console.log("payment go =>", paymentId[0]?.id)
+
+    const config = {
+      reference: new Date().getTime(),
+      email,
+      amount: 10000,
+      publicKey: "pk_live_a9c31ffce1eca1674882580da27446be439723bf",
+      channels: ["card"],
+    };
+    
+    // you can call this function anything
+    const onSuccess =  (reference) => {
+    // Implementation for whatever you want to do with reference and after success call.
+    const data = {
+      reference: reference.reference,
+      productId: paymentId,
+      courseId,
+      clientUserId: userId,
+      amount: price,
+    };
+    verifyPaystackPaymentInitiate(data);
+     return console.log("payment ref", reference);
+    };
+    
+    // you can call this function anything
+    const onClose = () => {
+    // implementation for  whatever you want to do when the Paystack dialog closed.
+    console.log('closed')
+    }
 
 
-  const componentProps = {
-    email,
-    amount: price,
-    metadata: {
-      name,
-      phone,
-    },
-    publicKey,
-    text: "Pay Now",
-    onSuccess: () =>
-      alert("Thanks for doing business with us! Come back soon!!"),
-    onClose: () => alert("Wait! You need this oil, don't go!!!!"),
-  }
+  const initializePayment = usePaystackPayment(config);
 
+  // const checkAndMakePayment = (bankPayment = false) => {
+
+  // }
+     
+    
+
+ 
  useEffect(() => {
   const setUser_Id = () => {
     if(loginUser_id?.id === ""){
@@ -82,27 +108,17 @@ const registerUser_id = useSelector(state => state.registerUser?.data?.data.user
         setPrice('')
         setDuration('')
         setCourse('KidsCode')
-      //  setModalShow(true)
-      
-
-        // if (user = "success") {
-        //     navigate('/subscribe')
-        // }
-        }
-
-    // useEffect(() => {
-    //   setUser_Id()
-    // }, [setUser_Id])
+ 
     
+  }
     useEffect(() => {
      dispatch(getPaymentInitiate())
     }, [getPaymentInitiate])
-    
   return (
     <div className='born-again-wrapper-form'>
             <ShowPaymentInfo 
-               show={modalShow}
-               onHide={() => setModalShow(false)}
+              //  show={modalShow}
+              //  onHide={() => setModalShow(false)}
             />
         <div className={styles.mainnavbar}>
         <div className="logo">
@@ -152,8 +168,11 @@ const registerUser_id = useSelector(state => state.registerUser?.data?.data.user
                 />
                 
                 {/* <button  className={styles.formbtncheckout} type='submit'>Submit</button> */}
+               
             </form>
-            <PaystackButton {...componentProps} />
+            <button onClick={() => {
+                initializePayment(onSuccess, onClose)
+              }}>Paystack Hooks Implementation</button>
         </div>
     </div>
   )

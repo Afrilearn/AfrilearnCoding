@@ -10,10 +10,12 @@ const paymentReducer = (state = intialState, { type, payload}) => {
                 ...state
             };
         case types.GET_PAYMENT_PLANS_SUCCESS:
+        case types.PAYMENT_VERIFICATION_SUCCESS:
             return {
                data: payload
             }
         case types.GET_PAYMENT_PLANS_FAIL:
+        case types.PAYMENT_VERIFICATION_FAILURE:
             return {
                 ...state,
                 error: payload
