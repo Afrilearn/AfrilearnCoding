@@ -25,15 +25,19 @@ export const verifyPaymentFail = (error) => ({
 
 
 
-export const verifyPaystackPaymentInitiate = (data) => {
-    console.log("API params", data)
+export const verifyPaystackPaymentInitiate = (data, token) => {
     return function (dispatch) {
         axios
-            .post("https://afrilearn-backend-01.herokuapp.com/api/v1/payments/verify-paystack-payment",
-            {
-                data
-            })
-            .then((res) => {
+        .post("https://afrilearn-backend-01.herokuapp.com/api/v1/payments/verify-paystack-payment",
+            {   data  },
+        {
+            headers: {
+                "token": token,
+                "Content-Type": "application/json",
+            }
+        })
+        .then((res) => {
+                console.log("API params", res.data)
                 dispatch(verifyPaymentSuccess(res.data))
             })
             .catch((error) => dispatch(verifyPaymentFail(error)))

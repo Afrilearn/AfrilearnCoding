@@ -21,10 +21,12 @@ const Subscribe = () => {
     const navigate = useNavigate();
     const [userId, setUserId] = useState('');
     const paymentPlans = useSelector(state => state.payMe)
-    const loginUser_id = useSelector(state => state.loginUser?.data?.data?.user)
+    const {loggedInUser} = useSelector(state => state.loginUser)
+    // const loginUser_id = useSelector(state => state.loginUser?.data?.data?.user)
     const registerUser_id = useSelector(state => state.registerUser?.data?.data.user)
 
-      console.log("loginUser_id from Payment plans =>", loginUser_id?.id)
+    const token = loggedInUser.data.token;
+      console.log("loginUser_id from Payment plans =>", loggedInUser.data.user.id)
       console.log(" registerUser_id  from Payment plans =>", registerUser_id?.id)
     const [duration, setDuration ] = useState('Duration:- 3 months');
     const [course, setCourse ] = useState('KidsCode');
@@ -47,7 +49,7 @@ const Subscribe = () => {
     const config = {
       reference: new Date().getTime(),
       email,
-      amount: 10000,
+      amount: price,
       publicKey: "pk_live_a9c31ffce1eca1674882580da27446be439723bf",
       channels: ["card"],
     };
@@ -62,7 +64,7 @@ const Subscribe = () => {
       clientUserId: userId,
       amount: price,
     };
-    verifyPaystackPaymentInitiate(data);
+    dispatch(verifyPaystackPaymentInitiate(data, token));
      return console.log("payment ref", reference);
     };
     
@@ -84,27 +86,19 @@ const Subscribe = () => {
  
  useEffect(() => {
   const setUser_Id = () => {
-    if(loginUser_id?.id === ""){
+    if(loggedInUser.data.user.id === ""){
       setUserId(registerUser_id?.id)
     }
-    setUserId(loginUser_id?.id)
+    setUserId(loggedInUser.data.user.id)
   }
 
   setUser_Id()
- }, [loginUser_id, registerUser_id])
+ }, [loggedInUser, registerUser_id])
  
- console.log("User_id ======>", userId)
+ console.log("User_id ======>", userId, token)
 
- 
-	// "fullName": "Michael Oladele",
-	// "email": "something@gmail.com",
-	// "password": "test123456",
-	// "confirmPassword": "test123456",
-	// "role": "606ed82e70f40e18e029165e", 
-	// "course": "kidsCode" 5fd08fba50964811309722d5
     const handleSubmit = (e) => {
         e.preventDefault();
-        // dispatch(makePaymentInitiate(courseId[0], paymentId[0], userId))
         setPrice('')
         setDuration('')
         setCourse('KidsCode')

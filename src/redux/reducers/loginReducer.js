@@ -1,6 +1,8 @@
 import * as types from '../types/loginUser';
 
-const intialState = [];
+const intialState = {
+    loggedInUser: []
+};
 
 
 const loginReducer = (state = intialState, { type, payload}) => {
@@ -11,7 +13,7 @@ const loginReducer = (state = intialState, { type, payload}) => {
             };
         case types.LOGIN_USER_SUCCESS:
             return {
-               data: payload
+                loggedInUser: payload
             }
         case types.LOGIN_USER_FAIL:
             return {

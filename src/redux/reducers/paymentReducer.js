@@ -1,6 +1,11 @@
 import * as types from '../types/paymentplans';
 
-const intialState = [];
+const intialState = {
+    paymentPlans: [],
+    paymentVerified: [],
+    error: [],
+
+};
 
 
 const paymentReducer = (state = intialState, { type, payload}) => {
@@ -10,17 +15,23 @@ const paymentReducer = (state = intialState, { type, payload}) => {
                 ...state
             };
         case types.GET_PAYMENT_PLANS_SUCCESS:
-        case types.PAYMENT_VERIFICATION_SUCCESS:
             return {
-               data: payload
+               paymentPlans: payload
             }
         case types.GET_PAYMENT_PLANS_FAIL:
+            return {
+                ...state,
+                error: payload
+            }
+        case types.PAYMENT_VERIFICATION_SUCCESS:
+            return {
+                paymentVerified: payload
+            }
         case types.PAYMENT_VERIFICATION_FAILURE:
             return {
                 ...state,
                 error: payload
             }
-    
         default:
             return {
                 ...state
