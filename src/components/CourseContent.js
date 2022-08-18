@@ -24,7 +24,7 @@ const CourseContent = () => {
                     )}
                 </ul>
                     <div className="btn-wrapper-content">
-                <Button variant="contained" href="/apply" className="btn-navbar btn-first">Sign up now</Button>
+                <Button variant="contained" href="https://paystack.com/pay/afrilearnkidscode" className="btn-navbar btn-first">Sign up now</Button>
             </div>
         </div>
       </div>
@@ -44,7 +44,7 @@ const CourseContent = () => {
                     )}
                  </ul>
                     <div className="btn-wrapper-content btn-wrapper-content-three">
-                <Button variant="contained" href="/apply" className="btn-navbar btn-middle">Sign up now</Button>
+                <Button variant="contained" href="https://paystack.com/pay/afrilearnkidscode" className="btn-navbar btn-middle">Sign up now</Button>
             </div>
         </div>
       </div>
@@ -63,7 +63,7 @@ const CourseContent = () => {
                     )}
                  </ul>
                     <div className="btn-wrapper-content">
-                <Button variant="contained" href="/apply" className="btn-navbar btn-three-course">Sign up now</Button>
+                <Button variant="contained" href="https://paystack.com/pay/afrilearnkidscode" className="btn-navbar btn-three-course">Sign up now</Button>
             </div>
         </div>
       </div>

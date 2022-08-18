@@ -30,7 +30,7 @@ const MainNavbar = ({ scrollToSection, faq, courses, process, lPath, showMobileM
             <li onClick={() => scrollToSection(process)}>ADMISSION PROCESS</li>
           </ul>
         </div>
-        <Button variant="contained" href="/apply" className="btn-navbar main-nav-btn">Sign up now</Button>
+        <Button variant="contained" href="https://paystack.com/pay/afrilearnkidscode" className="btn-navbar main-nav-btn">Sign up now</Button>
         <div className='hamburger-btn' onClick={showMobileMenu}>
             <GiHamburgerMenu />
         </div>

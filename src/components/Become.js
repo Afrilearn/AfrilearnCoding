@@ -15,12 +15,12 @@ const Become = () => {
            
               <div className="write-up-wrapper">
                 <h4>
-                Transform your child's life with</h4> <h4 className="coding-wrapper"> Coding Skills</h4> <h4>in</h4><h4 className="coding-wrapper">3 months</h4>
+                Transform your child's life with</h4> <h4 className="coding-wrapper"> Coding Skills</h4> <h4>in</h4><h4 className="coding-wrapper">2 months</h4>
                   
               </div>
               
             <div className="btn-wrapper">
-                <Button variant="contained" href="/apply" className="btn-navbar">Sign up now</Button>
+                <Button variant="contained" href="https://paystack.com/pay/afrilearnkidscode" className="btn-navbar">Sign up now</Button>
             </div>
 
         </div>
