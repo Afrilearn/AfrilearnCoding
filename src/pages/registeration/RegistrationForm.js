@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
@@ -15,7 +15,7 @@ const RegistrationForm = () => {
     const navigate = useNavigate();
     const user = useSelector(state => state.registerUser.data)
 
-    console.log("After registration =>", user)
+    console.log("After registration =>", user?.status)
   const [fullName, setFullName ] = useState('');
   const [studentRole, setStudentRole ] = useState("Student");
   const [role, setRole ] = useState("5fd08fba50964811309722d5");
@@ -25,7 +25,16 @@ const RegistrationForm = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  
+  const naviGate = () =>{
+    if(user?.status === 'success'){
+        window.location.replace('https://paystack.com/pay/afrilearnkidscode');
+    }
+  }
+
+
+  useEffect(() => {
+    naviGate()
+  }, [user?.status])
  
 	// "fullName": "Michael Oladele",
 	// "email": "something@gmail.com",
@@ -42,8 +51,7 @@ const RegistrationForm = () => {
         setCourse('KidsCode')
         setPhonenumber('')
         setPassword('')
-        navigate('/subscribe')
-        
+        setConfirmPassword('')
         }
 
   return (

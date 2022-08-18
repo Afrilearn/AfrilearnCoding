@@ -32,8 +32,7 @@ export const verifyPaystackPaymentInitiate = (data, token) => {
             {   data  },
         {
             headers: {
-                "token": token,
-                "Content-Type": "application/json",
+                "token": token
             }
         })
         .then((res) => {

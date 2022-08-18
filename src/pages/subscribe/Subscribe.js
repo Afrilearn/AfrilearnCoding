@@ -25,35 +25,36 @@ const Subscribe = () => {
     // const loginUser_id = useSelector(state => state.loginUser?.data?.data?.user)
     const registerUser_id = useSelector(state => state.registerUser?.data?.data.user)
 
-    const token = loggedInUser.data.token;
-      console.log("loginUser_id from Payment plans =>", loggedInUser.data.user.id)
+    const token = loggedInUser.data?.token;
+      // console.log("loginUser_id from Payment plans =>", loggedInUser.data.user?.id)
       console.log(" registerUser_id  from Payment plans =>", registerUser_id?.id)
     const [duration, setDuration ] = useState('Duration:- 3 months');
     const [course, setCourse ] = useState('KidsCode');
-    const [price, setPrice] = useState(5000);
+    const [price, setPrice] = useState(50);
     //const publicKey = "pk_live_643a3ea8170fabb90afd7c0d94aa7bfa9d73c16d"
     
     const [email, setEmail] = useState("micheaol@gmail.com")
     // const [name, setName] = useState("Michael Oladele")
     // const [phone, setPhone] = useState("2345556666")
-
+    
     const result = Object.values(paymentPlans);
     //const [modalShow, setModalShow] = React.useState(false);
     
     const testData = result.map((payment) => payment[4]);
-    const courseId = testData.map((td) => td)
+    // const courseId = testData.map((td) => td)
+    const courseId = 1
     const paymentId = testData.map((td) => td?.category)
-    console.log("course go =>", courseId[0]?.id)
+    console.log("course go =>", courseId)
     console.log("payment go =>", paymentId[0]?.id)
 
     const config = {
       reference: new Date().getTime(),
       email,
-      amount: price,
+      amount: price * 100 * (courseId?.length > 0 ? courseId.length : 1),
       publicKey: "pk_live_a9c31ffce1eca1674882580da27446be439723bf",
       channels: ["card"],
     };
-    
+    // console.log("Amount sub ======> ", amount)
     // you can call this function anything
     const onSuccess =  (reference) => {
     // Implementation for whatever you want to do with reference and after success call.
@@ -64,8 +65,9 @@ const Subscribe = () => {
       clientUserId: userId,
       amount: price,
     };
-    dispatch(verifyPaystackPaymentInitiate(data, token));
-     return console.log("payment ref", reference);
+      dispatch(verifyPaystackPaymentInitiate(data, token));
+      console.log("payment ref", reference);
+      console.log("data ref", reference);
     };
     
     // you can call this function anything
@@ -85,11 +87,14 @@ const Subscribe = () => {
 
  
  useEffect(() => {
+  console.log("I am result",result)
+  console.log("I am paymentId",paymentId)
+  console.log("I am loggedInUser",loggedInUser.data?.user.enrolledCourses[0].courseId.id)
   const setUser_Id = () => {
-    if(loggedInUser.data.user.id === ""){
+    if(loggedInUser.data?.user.id === ""){
       setUserId(registerUser_id?.id)
     }
-    setUserId(loggedInUser.data.user.id)
+    setUserId(loggedInUser.data?.user.id)
   }
 
   setUser_Id()

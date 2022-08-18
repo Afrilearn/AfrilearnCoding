@@ -8,6 +8,7 @@ const intialState = {
 };
 
 
+
 const paymentReducer = (state = intialState, { type, payload}) => {
     switch (type) {
         case types.GET_PAYMENT_PLANS_START:
