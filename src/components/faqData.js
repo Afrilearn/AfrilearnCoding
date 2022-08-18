@@ -51,7 +51,7 @@ const faqData = [
     },
     {
         id: 11,
-        title: "What will I learn in class for three months?",
+        title: "What will I learn in class for two months?",
         description: "You will learn the required skills to become a proficient with HTML, CSS, JavaScript etc"
     },
     
