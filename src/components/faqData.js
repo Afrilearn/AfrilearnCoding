@@ -17,7 +17,7 @@ const faqData = [
     {
         id: 4,
         title: "How long will the course last for?",
-        description: "The duration of the course is 3 months."
+        description: "The duration of the course is 2 months."
     },
     {
         id: 5,
